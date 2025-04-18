@@ -1,0 +1,68 @@
+{
+  "NAV": {
+    "ABOUTME": "Über Mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+  "INTRO": {
+    "HELLOWORLD": "Hallo Welt!",
+    "FIRSTPART": "Frontend",
+    "SECONDPART": "DEVELOPER",
+    "TEXT": "Ich entwickle moderne Webanwendungen mit Fokus auf Performance, Design und Usability.",
+    "CTA": "Kontakt aufnehmen"
+  },
+  "SKILLS": {
+    "TITLE": "Meine Skills",
+    "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
+    "BACKEND": ["Node.js", "Express", "MongoDB"],
+    "TOOLS": ["Git", "VS Code", "Figma"]
+  },
+  "PROJECTS": {
+    "TITLE": "Meine Projekte",
+    "LIST": [
+      {
+        "TITLE": "Portfolio Website",
+        "DESCRIPTION": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit."
+      },
+      {
+        "TITLE": "2D Game Engine",
+        "DESCRIPTION": "Ein HTML5-Canvas-Spiel mit Vanilla JavaScript."
+      },
+      {
+        "TITLE": "Discord Bot",
+        "DESCRIPTION": "Ein Bot mit Commands, Logging und Musiksystem – gehostet auf eigenem Server."
+      }
+    ]
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "NAME": "Dein Name",
+    "EMAIL": "Deine E-Mail",
+    "MESSAGE": "Nachricht",
+    "SEND": "Absenden",
+    "PRIVACY_TEXT": "Ich akzeptiere die Datenschutzbestimmungen."
+  },
+  "CERTIFICATES": {
+    "TITLE": "Zertifikate",
+    "LIST": [
+      {
+        "TITLE": "Frontend Web Development",
+        "PROVIDER": "Developer Academy",
+        "LINK": "assets/certificates/DAZertifikat.pdf"
+      },
+      {
+        "TITLE": "Elektrotechnik",
+        "PROVIDER": "Firma Lippert GmbH",
+        "LINK": "assets/certificates/ausbildung.pdf"
+      }
+    ]
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© {{year}} Florian Irving. Alle Rechte vorbehalten.",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "IMPRINT": "Impressum",
+    "PRIVACY": "Datenschutz"
+  }
+}
