@@ -6,11 +6,8 @@
     "CONTACT": "Kontakt"
   },
   "INTRO": {
-    "HELLOWORLD": "Hallo Welt!",
-    "FIRSTPART": "Frontend",
-    "SECONDPART": "DEVELOPER",
-    "TEXT": "Ich entwickle moderne Webanwendungen mit Fokus auf Performance, Design und Usability.",
-    "CTA": "Kontakt aufnehmen"
+    "NAME": "Florian Irving",
+    "JOBTITLE": "Frontend Developer"
   },
   "SKILLS": {
     "TITLE": "Meine Skills",
