@@ -1,6 +1,6 @@
 {
   "NAV": {
-    "ABOUTME": "Über Mich",
+    "ABOUTME": "Warum Ich?",
     "SKILLS": "Skills",
     "PROJECTS": "Projekte",
     "CONTACT": "Kontakt"
@@ -8,6 +8,15 @@
   "INTRO": {
     "NAME": "Florian Irving",
     "JOBTITLE": "Frontend Developer"
+  },
+  "ABOUTME": {
+    "NAME": "Warum Ich?",
+    "FIRSTPART": "Ich komme",
+    "SECONDPART": "aus Herford..|",
+    "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit dem Fokus auf die Erstellung benutzerfreundlicher und responsiver Webanwendungen. Ich habe Erfahrung in verschiedenen Technologien und Frameworks und bin immer bestrebt, neue Fähigkeiten zu erlernen.",
+    "LEARNINGNOW": "Ich lerne gerade:",
+    "LEARNINGNEXT": "Ich lerne gerade:",
+    "PROJECTS": "Ich arbeite an:"
   },
   "SKILLS": {
     "TITLE": "Meine Skills",
@@ -28,7 +37,7 @@
       },
       {
         "TITLE": "Discord Bot",
-        "DESCRIPTION": "Ein Bot mit Commands, Logging und Musiksystem – gehostet auf eigenem Server."
+        "DESCRIPTION": "Ein Bot mit Commands und Logging – gehostet auf eigenem Server."
       }
     ]
   },
