@@ -11,35 +11,58 @@
   },
   "ABOUTME": {
     "NAME": "Why me?",
-    "FIRSTPART": "I am",
-    "SECONDPART": "located in Herford..|",
-    "DESCRIPTION": "I am a passionate frontend developer with a focus on creating user-friendly and responsive web applications. I have experience in various technologies and frameworks, and I am always eager to learn new skills.",
-    "LEARNINGNOW": "I am currently learning:",
-    "LEARNINGNEXT": "I am currently learning:",
-    "PROJECTS": "I am working on:"
+    "FIRSTANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "located in Herford",
+      "THIRDPART": "..|"
+    },
+    "SECONDANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "open to remote work",
+      "THIRDPART": "..|"
+    },
+    "THIRDANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "open to relocation",
+      "THIRDPART": "..|"
+    },
+    "DESCRIPTION": "I'm a passionate frontend developer focused on user-friendly, responsive web applications. With a love for modern technologies and video games, I constantly expand my skills.",
+    "LETSTALK": "Let's talk!"
   },
   "SKILLS": {
     "TITLE": "My Skills",
     "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
     "BACKEND": ["Node.js", "Express", "MongoDB"],
-    "TOOLS": ["Git", "VS Code", "Figma"]
+    "TOOLS": ["Git", "VS Code", "Figma"],
+    "LEARNINGNOW": "I am currently learning:",
+    "LEARNINGNEXT": "I love constantly pushing my skills, discovering new technologies, and building real solutions from them. What is “state of the art” today may be outdated tomorrow — and that's exactly what makes this job so exciting for me."
   },
   "PROJECTS": {
     "TITLE": "My Projects",
-    "LIST": [
-      {
-        "TITLE": "Portfolio Website",
-        "DESCRIPTION": "My personal web profile built with Angular and multilingual support."
-      },
-      {
-        "TITLE": "2D Game Engine",
-        "DESCRIPTION": "A game made with HTML5 Canvas and Vanilla JavaScript."
-      },
-      {
-        "TITLE": "Discord Bot",
-        "DESCRIPTION": "A bot with commands and logging – hosted on my own server."
-      }
-    ]
+    "PROJECTONE": {
+      "TITLE": "Portfolio Website",
+      "DESCRIPTIONONE": "My personal portfolio website with Angular, animations, and i18n.",
+      "DESCRIPTIONTWO": "My personal website with Angular and multilingual support.",
+      "DESCRIPTIONTHREE": "My personal website with Angular and multilingual support."
+    },
+    "PROJECTTWO": {
+      "TITLE": "2D Game Engine",
+      "DESCRIPTIONONE": "A 2D game with Canvas & Vanilla JavaScript – including boss fights.",
+      "DESCRIPTIONTWO": "A game application with HTML5 Canvas and Vanilla JavaScript.",
+      "DESCRIPTIONTHREE": "A game application with HTML5 Canvas and Vanilla JavaScript."
+    },
+    "PROJECTTHREE": {
+      "TITLE": "Join",
+      "DESCRIPTIONONE": "A great project",
+      "DESCRIPTIONTWO": "A great project",
+      "DESCRIPTIONTHREE": "A great project"
+    },
+    "PROJECTFOUR": {
+      "TITLE": "Discord Bot",
+      "DESCRIPTIONONE": "A bot with commands and logging – hosted on my own server.",
+      "DESCRIPTIONTWO": "A bot with commands and logging – hosted on my own server.",
+      "DESCRIPTIONTHREE": "A bot with commands and logging – hosted on my own server."
+    }
   },
   "CONTACT": {
     "TITLE": "Contact",

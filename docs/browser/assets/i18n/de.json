@@ -11,35 +11,58 @@
   },
   "ABOUTME": {
     "NAME": "Warum Ich?",
-    "FIRSTPART": "Ich komme",
-    "SECONDPART": "aus Herford..|",
-    "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit dem Fokus auf die Erstellung benutzerfreundlicher und responsiver Webanwendungen. Ich habe Erfahrung in verschiedenen Technologien und Frameworks und bin immer bestrebt, neue Fähigkeiten zu erlernen.",
-    "LEARNINGNOW": "Ich lerne gerade:",
-    "LEARNINGNEXT": "Ich lerne gerade:",
-    "PROJECTS": "Ich arbeite an:"
+    "FIRSTANIMATION": {
+      "FIRSTPART": "Ich komme",
+      "SECONDPART": "aus Herford",
+      "THIRDPART": "..|"
+    },
+    "SECONDANIMATION": {
+      "FIRSTPART": "Ich bin",
+      "SECONDPART": "offen für Remote-Arbeit",
+      "THIRDPART": "..|"
+    },
+    "THIRDANIMATION": {
+      "FIRSTPART": "Ich bin",
+      "SECONDPART": "offen für einen Umzug",
+      "THIRDPART": "..|"
+    },
+    "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Fokus auf benutzerfreundliche, responsive Webanwendungen. Mit Begeisterung für moderne Technologien und Computerspiele erweitere ich stetig meine Fähigkeiten.",
+    "LETSTALK": "Lass uns reden!"
   },
   "SKILLS": {
     "TITLE": "Meine Skills",
     "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
     "BACKEND": ["Node.js", "Express", "MongoDB"],
-    "TOOLS": ["Git", "VS Code", "Figma"]
+    "TOOLS": ["Git", "VS Code", "Figma"],
+    "LEARNINGNOW": "Ich lerne gerade:",
+    "LEARNINGNEXT": "Ich liebe es, meine Skills ständig zu pushen, neue Technologien zu entdecken und daraus echte Lösungen zu bauen. Was heute „State of the Art“ ist, kann morgen schon überholt sein – und genau das macht diesen Job so spannend für mich."
   },
   "PROJECTS": {
     "TITLE": "Meine Projekte",
-    "LIST": [
-      {
-        "TITLE": "Portfolio Website",
-        "DESCRIPTION": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit."
-      },
-      {
-        "TITLE": "2D Game Engine",
-        "DESCRIPTION": "Ein HTML5-Canvas-Spiel mit Vanilla JavaScript."
-      },
-      {
-        "TITLE": "Discord Bot",
-        "DESCRIPTION": "Ein Bot mit Commands und Logging – gehostet auf eigenem Server."
-      }
-    ]
+    "PROJECTONE": {
+      "TITLE": "Portfolio Website",
+      "DESCRIPTIONONE": "Meine persönliche Portfolio-Website mit Angular, Animationen und i18n.",
+      "DESCRIPTIONTWO": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit.",
+      "DESCRIPTIONTHREE": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit."
+    },
+    "PROJECTTWO": {
+      "TITLE": "2D Game Engine",
+      "DESCRIPTIONONE": "Ein 2D-Spiel mit Canvas & Vanilla JavaScript – inklusive Bossfights.",
+      "DESCRIPTIONTWO": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript.",
+      "DESCRIPTIONTHREE": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript."
+    },
+    "PROJECTTHREE": {
+      "TITLE": "Join",
+      "DESCRIPTIONONE": "Ein tolles Project",
+      "DESCRIPTIONTWO": "Ein tolles Project",
+      "DESCRIPTIONTHREE": "Ein tolles Project"
+    },
+    "PROJECTFOUR": {
+      "TITLE": "Discord Bot",
+      "DESCRIPTIONONE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
+      "DESCRIPTIONTWO": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
+      "DESCRIPTIONTHREE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server."
+    }
   },
   "CONTACT": {
     "TITLE": "Kontakt",
