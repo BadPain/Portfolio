@@ -40,28 +40,44 @@
   "PROJECTS": {
     "TITLE": "Meine Projekte",
     "PROJECTONE": {
-      "TITLE": "Portfolio Website",
+      "TITLE": "1. Portfolio Website",
       "DESCRIPTIONONE": "Meine persönliche Portfolio-Website mit Angular, Animationen und i18n.",
       "DESCRIPTIONTWO": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit.",
-      "DESCRIPTIONTHREE": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit."
+      "DESCRIPTIONTHREE": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit.",
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Angular.svg",
+      "SKILLTWO": "assets/img/skills/Css.svg",
+      "SKILLTHREE": "assets/img/skills/i18next.png"
     },
     "PROJECTTWO": {
-      "TITLE": "2D Game Engine",
+      "TITLE": "2. 2D Game Engine",
       "DESCRIPTIONONE": "Ein 2D-Spiel mit Canvas & Vanilla JavaScript – inklusive Bossfights.",
       "DESCRIPTIONTWO": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript.",
-      "DESCRIPTIONTHREE": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript."
+      "DESCRIPTIONTHREE": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript.",
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLTWO": "assets/img/skills/Javascript.svg",
+      "SKILLTHREE": "assets/img/skills/Css.svg"
     },
     "PROJECTTHREE": {
-      "TITLE": "Join",
+      "TITLE": "3. Join",
       "DESCRIPTIONONE": "Ein tolles Project",
       "DESCRIPTIONTWO": "Ein tolles Project",
-      "DESCRIPTIONTHREE": "Ein tolles Project"
+      "DESCRIPTIONTHREE": "Ein tolles Project",
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTHREE": "assets/img/skills/scrum.svg"
     },
     "PROJECTFOUR": {
-      "TITLE": "Discord Bot",
+      "TITLE": "4. Discord Bot",
       "DESCRIPTIONONE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
       "DESCRIPTIONTWO": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
-      "DESCRIPTIONTHREE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server."
+      "DESCRIPTIONTHREE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLTWO": "assets/img/skills/Python.svg",
+      "SKILLTHREE": "assets/img/skills/API.svg"
     }
   },
   "CONTACT": {

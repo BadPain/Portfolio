@@ -43,25 +43,41 @@
       "TITLE": "Portfolio Website",
       "DESCRIPTIONONE": "My personal portfolio website with Angular, animations, and i18n.",
       "DESCRIPTIONTWO": "My personal website with Angular and multilingual support.",
-      "DESCRIPTIONTHREE": "My personal website with Angular and multilingual support."
+      "DESCRIPTIONTHREE": "My personal website with Angular and multilingual support.",
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Angular.svg",
+      "SKILLTWO": "assets/img/skills/Css.svg",
+      "SKILLTHREE": "assets/img/skills/i18next.png"
     },
     "PROJECTTWO": {
       "TITLE": "2D Game Engine",
       "DESCRIPTIONONE": "A 2D game with Canvas & Vanilla JavaScript – including boss fights.",
       "DESCRIPTIONTWO": "A game application with HTML5 Canvas and Vanilla JavaScript.",
-      "DESCRIPTIONTHREE": "A game application with HTML5 Canvas and Vanilla JavaScript."
+      "DESCRIPTIONTHREE": "A game application with HTML5 Canvas and Vanilla JavaScript.",
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLTWO": "assets/img/skills/Javascript.svg",
+      "SKILLTHREE": "assets/img/skills/Css.svg"
     },
     "PROJECTTHREE": {
       "TITLE": "Join",
       "DESCRIPTIONONE": "A great project",
       "DESCRIPTIONTWO": "A great project",
-      "DESCRIPTIONTHREE": "A great project"
+      "DESCRIPTIONTHREE": "A great project",
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTHREE": "assets/img/skills/scrum.svg"
     },
     "PROJECTFOUR": {
       "TITLE": "Discord Bot",
       "DESCRIPTIONONE": "A bot with commands and logging – hosted on my own server.",
       "DESCRIPTIONTWO": "A bot with commands and logging – hosted on my own server.",
-      "DESCRIPTIONTHREE": "A bot with commands and logging – hosted on my own server."
+      "DESCRIPTIONTHREE": "A bot with commands and logging – hosted on my own server.",
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLTWO": "assets/img/skills/Python.svg",
+      "SKILLTHREE": "assets/img/skills/API.svg"
     }
   },
   "CONTACT": {
