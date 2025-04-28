@@ -1,0 +1,27 @@
+<footer class="footerWrapper footer">
+  <nav>
+    <a href="/datenschutz">{{ 'FOOTER.PRIVACY' | translate }}</a>
+    <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
+  </nav>
+  <img class="logo" src="assets/img/logo/LogoFooter.svg" alt="">
+  <div class="socials">
+    <a href="mailto:mail@irving.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Florian%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+      (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
+      <img
+        [src]="isHoveredMail ? 'assets/img/otherSpecs/EmailFooterWhite.svg' : 'assets/img/otherSpecs/EmailFooter.svg'"
+        width="30" height="30" alt="Mail Logo" />
+    </a>
+    <a href="https://www.linkedin.com/in/florian-irving/" target="_blank" rel="noopener noreferrer"
+      (mouseenter)="isHoveredLinkedin = true" (mouseleave)="isHoveredLinkedin = false">
+      <img
+        [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/LinkedinFooterWhite.svg' : 'assets/img/otherSpecs/LinkedinFooter.svg'"
+        width="30" height="30" alt="LinkedIn Logo" />
+    </a>
+    <a href="https://github.com/BadPain" target="_blank" rel="noopener noreferrer" (mouseenter)="isHoveredGitHub = true"
+      (mouseleave)="isHoveredGitHub = false">
+      <img
+        [src]="isHoveredGitHub ? 'assets/img/otherSpecs/GitHubFooterWhite.svg' : 'assets/img/otherSpecs/GithubFooter.svg'"
+        width="30" height="30" alt="GitHub Logo" />
+    </a>
+  </div>
+</footer>

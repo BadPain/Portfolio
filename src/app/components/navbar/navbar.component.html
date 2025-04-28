@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <section>
+        <ul class="nav-links">
+            <div class="logoMain">
+                <a href="/" class="logo">
+                    <img src="./assets/img/logo/LogoIconBlack.svg" alt="Florian Irving Logo" />
+                </a>
+                <p class="nameSmall">F. Irving</p>
+                <p class="jobTitleSmall">developer</p>
+            </div>
+            <li><a href="#aboutMe" [ngClass]="{'active': activeLink === 'aboutMe'}" (click)="setActive('aboutMe')">{{
+                    'NAV.ABOUTME' | translate }}</a></li>
+            <li><a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActive('skills')">{{
+                    'NAV.SKILLS' | translate }}</a></li>
+            <li><a href="#projects" [ngClass]="{'active': activeLink === 'projects'}" (click)="setActive('projects')">{{
+                    'NAV.PROJECTS' | translate }}</a></li>
+            <li><a href="#contact" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')">{{
+                    'NAV.CONTACT' | translate }}</a></li>
+            <app-language-switcher></app-language-switcher>
+        </ul>
+    </section>
+</nav>

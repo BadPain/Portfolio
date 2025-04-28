@@ -1,0 +1,65 @@
+<section class="contactsSection">
+  <div class="contactsWrapper">
+    <div class="contactsTitleWrapper">
+      <h2 class="contactsTitle">{{ 'CONTACT.TITLE' | translate }}</h2>
+      <button class="scrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
+    </div>
+    <div class="contentUp">
+      <div class="contactDescriptionContainer">
+        <p class="contactDescription"> {{ 'CONTACT.DESCRIPTION' | translate }} </p>
+        <div class="contactInfo">
+          <div class="contactEmail">
+            <span class="iconEmail"></span>
+            E-Mail: <a href="mailto:mail@irving.contact">mail&#64;irving.contact</a>
+          </div>
+          <div class="contactPhone">
+            <span class="iconPhone"></span>
+            Tel: <a href="tel:+4917312345678">0173 / 12345678</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentDown">
+      <form (ngSubmit)="onSubmit()" class="contactForm" #contactForm="ngForm">
+        <div class="nameAndEmail">
+          <label class="name">
+            {{ 'CONTACT.NAME' | translate }}
+            <input type="text" class="nameInput" name="name" [(ngModel)]="name" minlength="3" required
+              #nameInput="ngModel"
+              [placeholder]="nameInput.invalid && (nameInput.dirty || nameInput.touched) ? '' : ''" />
+          </label>
+          <label class="email">
+            {{ 'CONTACT.EMAIL' | translate }}
+            <input type="email" class="emailInput" name="email" [(ngModel)]="email" required
+              pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" #emailInput="ngModel"
+              [placeholder]="emailInput.invalid && (emailInput.dirty || emailInput.touched) ? '' : ''" />
+          </label>
+        </div>
+        <div>
+          <label class="message">
+            {{ 'CONTACT.MESSAGE' | translate }}
+            <textarea [(ngModel)]="message" #messageInput="ngModel" class="messageInput" name="message" minlength="25"
+              maxlength="250" rows="4" required
+              [placeholder]="messageInput.invalid && (messageInput.dirty || messageInput.touched) ? '' : ''"></textarea>
+          </label>
+          <label class="privacyContainer">
+            <input type="checkbox" class="privacyCheckbox" [(ngModel)]="privacyAccepted" name="privacyAccepted"
+              required />
+            <span class="customCheckbox"></span>
+            <p class="privacyText">
+              {{ 'CONTACT.PRIVACY_PART1' | translate }}
+              <a class="blueText" href="/privacy-policy" target="_blank">{{ 'CONTACT.PRIVACY_PART2' | translate }}</a>
+              {{ 'CONTACT.PRIVACY_PART3' | translate }}
+            </p>
+          </label>
+        </div>
+        <div class="sendButtonContainer">
+          <button type="submit" [class.activeSendButton]="privacyAccepted" [class.inactiveSendButton]="!privacyAccepted"
+            [disabled]="!privacyAccepted" class="sendButton" [disabled]="!contactForm.form.valid">
+            {{ 'CONTACT.SEND' | translate }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<section class="intro">
+    <section class="left">
+        <div class="shapeWrapper">
+            <img class="shapeOne" src="assets/img/otherSpecs/shape.svg" alt="">
+            <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="">
+        </div>
+        <img class="profilePicture" src="assets/img/pictures/Ich_cutted.png" alt="">
+    </section>
+    <section class="right">
+        <div class="containerText">
+            <div class="logoAndSocials">
+                <div class="logoMain">
+                    <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Florian Irving Logo" />
+                    <p class="nameSmall">F. Irving</p>
+                    <p class="jobTitleSmall">developer</p>
+                </div>
+                <div class="socials">
+                    <a href="mailto:mail@irving.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Florian%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+                        (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
+                        <img [src]="isHoveredMail ? 'assets/img/otherSpecs/mailHover.svg' : 'assets/img/otherSpecs/mail.svg'"
+                            width="30" height="30" alt="Mail Logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/florian-irving/" target="_blank" rel="noopener noreferrer"
+                        (mouseenter)="isHoveredLinkedin = true" (mouseleave)="isHoveredLinkedin = false">
+                        <img [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/linkedinHover.svg' : 'assets/img/otherSpecs/linkedin.svg'"
+                            width="30" height="30" alt="LinkedIn Logo" />
+                    </a>
+                    <a href="https://github.com/BadPain" target="_blank" rel="noopener noreferrer"
+                        (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
+                        <img [src]="isHoveredGitHub ? 'assets/img/otherSpecs/githubHover.svg' : 'assets/img/otherSpecs/github.svg'"
+                            width="30" height="30" alt="GitHub Logo" />
+                    </a>
+                </div>
+            </div>
+            <p class="name">{{ 'INTRO.NAME' | translate }}</p>
+            <p class="jobTitle">{{ 'INTRO.JOBTITLE' | translate }}</p>
+        </div>
+        <div class="cta">
+            <a class="cta-button" href="#contact">
+                <img [src]="isHovered ? 'assets/img/otherSpecs/ArrowDownHover.svg' : 'assets/img/otherSpecs/Arrowdown.svg'"
+                    (mouseenter)="isHovered = true" (mouseleave)="isHovered = false" alt="Scroll down arrow" />
+            </a>
+        </div>
+    </section>
+</section>

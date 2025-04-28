@@ -1,0 +1,9 @@
+@import "../../../styles/mixins";
+
+@media (max-width: 1200px) {
+  .profilePicture {
+    width: 100%;
+    height: auto;
+    min-height: 50%;
+  }
+}

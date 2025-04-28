@@ -1,0 +1,10 @@
+<section class="certificates">
+    <h2>{{ 'CERTIFICATES.TITLE' | translate }}</h2>
+  
+    <div *ngFor="let cert of certificates" class="certificate">
+      <h3>{{ cert.TITLE }}</h3>
+      <p>{{ cert.PROVIDER }}</p>
+      <a [href]="cert.LINK" target="_blank" rel="noopener noreferrer">📄 PDF öffnen</a>
+    </div>
+  </section>
+  

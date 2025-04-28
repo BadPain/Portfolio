@@ -1,0 +1,159 @@
+{
+  "NAV": {
+    "ABOUTME": "Why me?",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "INTRO": {
+    "NAME": "Florian Irving",
+    "JOBTITLE": "Frontend Developer"
+  },
+  "ABOUTME": {
+    "NAME": "Why me?",
+    "FIRSTANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "located in Herford",
+      "THIRDPART": "..|"
+    },
+    "SECONDANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "open to remote work",
+      "THIRDPART": "..|"
+    },
+    "THIRDANIMATION": {
+      "FIRSTPART": "I'm",
+      "SECONDPART": "open to relocation",
+      "THIRDPART": "..|"
+    },
+    "DESCRIPTION": "I'm a passionate frontend developer focused on user-friendly, responsive web applications. With a love for modern technologies and video games, I constantly expand my skills.",
+    "LETSTALK": "Let's talk!"
+  },
+  "SKILLS": {
+    "TITLE": "My Skills",
+    "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
+    "BACKEND": ["Node.js", "Express", "MongoDB"],
+    "TOOLS": ["Git", "VS Code", "Figma"],
+    "LEARNINGNOW": "I am currently learning:",
+    "LEARNINGNEXT": "I love discovering new technologies, developing solutions and constantly evolving - that's what makes this job exciting for me."
+  },
+  "PROJECTS": {
+    "TITLE": "My Projects",
+    "PROJECTONE": {
+      "TITLE": "1. Portfolio Website",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "My personal portfolio website was developed using Angular and includes modern animations as well as full multilingual support (i18n) to best address an international audience."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "My personal web business card was built with Angular and, thanks to integrated multilingual support, offers an optimal layout and user experience for an international audience."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "New experience through Angular",
+          "TEXT": "Through working with Angular, I gained in-depth experience in modern web development, component structure, data binding, routing, and handling multilingual content."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Angular.svg",
+      "SKILLTWO": "assets/img/skills/Css.svg",
+      "SKILLTHREE": "assets/img/skills/i18next.png"
+    },
+    "PROJECTTWO": {
+      "TITLE": "2. 2D Game Engine",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "This game application was created using HTML5 Canvas and Vanilla JavaScript, with a strong focus on the technical implementation of animations and precise game mechanics."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "My 2D game built with HTML5 Canvas and Vanilla JavaScript offers a dynamic gameplay experience with exciting boss fights, detailed animations, and a well-thought-out level design."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "Through this project, I gained valuable experience and discovered the many possibilities JavaScript, HTML, and CSS offer in modern web development."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLTWO": "assets/img/skills/Javascript.svg",
+      "SKILLTHREE": "assets/img/skills/Css.svg"
+    },
+    "PROJECTTHREE": {
+      "TITLE": "3. Join",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "TO BE EDITED"
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "TO BE EDITED2"
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "TO BE EDITED3"
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTHREE": "assets/img/skills/scrum.svg"
+    },
+    "PROJECTFOUR": {
+      "TITLE": "4. Discord Bot",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "I developed a Discord bot with custom commands and extensive logging, and successfully hosted and managed it on my own Linux server."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "During this project, I gained extensive experience in bot development and successfully set up a Ubuntu server to manage and run the bot."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "I learned to develop effective problem-solving strategies, to analyze and understand foreign code, and to successfully continue its development."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLTWO": "assets/img/skills/Python.svg",
+      "SKILLTHREE": "assets/img/skills/API.svg"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "NAME": "Your Name",
+    "EMAIL": "Your Email",
+    "MESSAGE": "Your Message",
+    "PRIVACY_PART1": "I have read the",
+    "PRIVACY_PART2": "privacy policy",
+    "PRIVACY_PART3": "and consent to the processing of my data.",
+    "SEND": "Send"
+  },
+  "CERTIFICATES": {
+    "TITLE": "Certificates",
+    "LIST": [
+      {
+        "TITLE": "Frontend Web Development",
+        "PROVIDER": "Developer Academy",
+        "LINK": "assets/certificates/DAZertifikat.pdf"
+      },
+      {
+        "TITLE": "Electrotechnics",
+        "PROVIDER": "Company Lippert GmbH",
+        "LINK": "assets/certificates/ausbildung.pdf"
+      }
+    ]
+  },
+  "FOOTER": {
+    "COPYRIGHT": "©  Florian Irving {{year}}",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "IMPRINT": "Imprint",
+    "PRIVACY": "Legal Notice"
+  }
+}

@@ -1,0 +1,310 @@
+.contactsSection {
+  padding: 80px 150px 0 150px;
+  background-color: rgb(38, 46, 52);
+}
+
+.contactsWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contactsTitleWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  background-color: rgb(38, 46, 52);
+  text-align: center;
+
+  .contactsTitle {
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    color: rgb(137, 188, 255);
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .scrollTopButton {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 38px;
+    height: 89px;
+    border: none;
+    background: url("../../../assets/img/otherSpecs/ArrowUp.svg") no-repeat
+      center;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      background-image: url("../../../assets/img/otherSpecs/ArrowUpHover.svg");
+    }
+  }
+}
+
+.contentUp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contentDown {
+  display: flex;
+  justify-content: center;
+}
+
+.contactDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: rgba(248, 245, 236, 1);
+}
+
+.contactDescription {
+  display: flex;
+  justify-content: flex-start;
+  width: 429px;
+  height: 124px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: justify;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 445px;
+  height: 124px;
+  background-color: rgb(38, 46, 52);
+  gap: 20px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contactEmail,
+  .contactPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      color: rgba(137, 188, 217, 1);
+    }
+  }
+
+  .contactEmail {
+    span {
+      background-image: url("../../../assets/img/otherSpecs/iconEmail.svg");
+    }
+    &:hover span {
+      background-image: url("../../../assets/img/otherSpecs/iconEmailHover.svg");
+    }
+  }
+
+  .contactPhone {
+    span {
+      background-image: url("../../../assets/img/otherSpecs/iconPhone.svg");
+    }
+    &:hover span {
+      background-image: url("../../../assets/img/otherSpecs/iconPhoneHover.svg");
+    }
+  }
+}
+
+.contactForm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: rgba(137, 188, 217, 1);
+}
+
+.nameAndEmail {
+  display: flex;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 20px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+.nameInput {
+  width: 445px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  color: rgba(137, 188, 217, 1);
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.emailInput {
+  width: 445px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  color: rgba(137, 188, 217, 1);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.messageInput {
+  width: 911px;
+  height: 164px;
+  padding: 20px 20px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  margin-bottom: 10px;
+  color: rgba(137, 188, 217, 1);
+}
+
+.nameInput.ng-invalid.ng-touched,
+.emailInput.ng-invalid.ng-touched,
+.messageInput.ng-invalid.ng-touched {
+  border-color: rgba(255, 100, 100, 1);
+  background-color: rgba(255, 100, 100, 0.05);
+}
+
+.privacyContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.privacyCheckbox {
+  display: none;
+}
+
+.customCheckbox {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../assets/img/otherSpecs/checkboxUnclear.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.privacyCheckbox:checked + .customCheckbox {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../assets/img/otherSpecs/checkboxChecked.svg");
+}
+
+.privacyText {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(248, 245, 236, 1);
+  .blueText {
+    color: rgba(137, 188, 217, 1);
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.sendButtonContainer {
+  margin-top: auto;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  .sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 48px;
+    opacity: 0.5;
+    gap: 10px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(248, 245, 236, 1);
+    background-color: rgb(38, 46, 52);
+    color: rgba(248, 245, 236, 1);
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    margin-bottom: 200px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .activeSendButton {
+    border-color: rgba(137, 188, 217, 1);
+    color: rgba(137, 188, 217, 1);
+  }
+
+  .inactiveSendButton {
+    border-color: grey;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

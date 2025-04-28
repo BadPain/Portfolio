@@ -1,0 +1,36 @@
+<section class="projectsSection">
+  <div class="projectsWrapper">
+    <h1 class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
+    <div class="projectTabs">
+      <button *ngFor="let project of projects; let i = index" (click)="setActiveProject(i)"
+        [class.active]="i === activeProjectIndex">
+        {{ project.titleKey | translate }}
+      </button>
+    </div>
+    <div class="projectCard" *ngIf="projects[activeProjectIndex] as project">
+      <div class="projectContentLeft">
+        <div class="projectDescription">
+          <ng-container *ngFor="let headlineKey of project.descriptionHeadlineKeys; let i = index">
+            <h3>{{ headlineKey | translate }}</h3>
+            <p>
+              <img class="miniShape" src="assets/img/otherSpecs/miniShape.svg" alt="" />
+              {{ project.descriptionKeys[i] | translate }}
+            </p>
+          </ng-container>
+        </div>
+      </div>
+      <div class="projectContentRight">
+        <h3>{{ project.usedSkillHeadline | translate }}</h3>
+        <div class="projectSkills">
+          <img *ngFor="let skill of project.usedSkillKeys" [src]="skill | translate" alt="Skill Icon"
+            class="skillIcon" />
+        </div>
+        <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" />
+        <div class="projectLinks">
+          <button class="live"><a *ngIf="project.link" [href]="project.link" target="_blank">Live Test</a></button>
+          <button class="github"><a *ngIf="project.repo" [href]="project.repo" target="_blank">GitHub</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
