@@ -35,15 +35,26 @@
     "BACKEND": ["Node.js", "Express", "MongoDB"],
     "TOOLS": ["Git", "VS Code", "Figma"],
     "LEARNINGNOW": "Ich lerne gerade:",
-    "LEARNINGNEXT": "Ich liebe es, meine Skills ständig zu pushen, neue Technologien zu entdecken und daraus echte Lösungen zu bauen. Was heute „State of the Art“ ist, kann morgen schon überholt sein – und genau das macht diesen Job so spannend für mich."
+    "LEARNINGNEXT": "Ich liebe es, neue Technologien zu entdecken, Lösungen zu entwickeln und mich ständig weiterzuentwickeln – genau das macht diesen Job für mich spannend."
   },
   "PROJECTS": {
     "TITLE": "Meine Projekte",
     "PROJECTONE": {
       "TITLE": "1. Portfolio Website",
-      "DESCRIPTIONONE": "Meine persönliche Portfolio-Website mit Angular, Animationen und i18n.",
-      "DESCRIPTIONTWO": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit.",
-      "DESCRIPTIONTHREE": "Meine persönliche Web-Visitenkarte mit Angular und Mehrsprachigkeit.",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Meine persönliche Portfolio-Website wurde mit Angular entwickelt und beinhaltet moderne Animationen sowie eine vollständige Mehrsprachigkeitsunterstützung (i18n), um internationale Besucher bestmöglich anzusprechen."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "Meine persönliche Web-Visitenkarte wurde mit Angular entwickelt und bietet dank integrierter Mehrsprachigkeit eine optimale Darstellung und Benutzerfreundlichkeit für ein internationales Publikum."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Neue Erfahrung durch Angular",
+          "TEXT": "Durch die Arbeit mit Angular habe ich moderne Webentwicklung, Komponentenstruktur, Datenbindung, Routing und den Umgang mit Mehrsprachigkeit intensiv gelernt."
+        }
+      },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Angular.svg",
       "SKILLTWO": "assets/img/skills/Css.svg",
@@ -51,9 +62,20 @@
     },
     "PROJECTTWO": {
       "TITLE": "2. 2D Game Engine",
-      "DESCRIPTIONONE": "Ein 2D-Spiel mit Canvas & Vanilla JavaScript – inklusive Bossfights.",
-      "DESCRIPTIONTWO": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript.",
-      "DESCRIPTIONTHREE": "Eine Spielanwendung mit HTML5 Canvas und Vanilla JavaScript.",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Diese Spielanwendung entstand mit HTML5 Canvas und Vanilla JavaScript und legt besonderen Fokus auf die technische Umsetzung von Animationen und präzisen Spielmechaniken."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "Mein 2D-Spiel mit HTML5 Canvas und Vanilla JavaScript bietet ein dynamisches Spielerlebnis mit spannenden Bosskämpfen, detailreichen Animationen und einer durchdachten Levelstruktur."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
+          "TEXT": "Durch das Projekt habe ich umfangreiche Erfahrungen gesammelt und erkannt, welche vielseitigen Möglichkeiten JavaScript, HTML und CSS in der Webentwicklung bieten."
+        }
+      },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/html.svg",
       "SKILLTWO": "assets/img/skills/Javascript.svg",
@@ -61,9 +83,20 @@
     },
     "PROJECTTHREE": {
       "TITLE": "3. Join",
-      "DESCRIPTIONONE": "Ein tolles Project",
-      "DESCRIPTIONTWO": "Ein tolles Project",
-      "DESCRIPTIONTHREE": "Ein tolles Project",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "NOCH BEARBEITEN"
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "NOCH BEARBEITEN2"
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
+          "TEXT": "NOCH BEARBEITEN3"
+        }
+      },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Javascript.svg",
       "SKILLTWO": "assets/img/skills/API.svg",
@@ -71,9 +104,20 @@
     },
     "PROJECTFOUR": {
       "TITLE": "4. Discord Bot",
-      "DESCRIPTIONONE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
-      "DESCRIPTIONTWO": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
-      "DESCRIPTIONTHREE": "Ein Bot mit Kommandos und Logging – gehostet auf meinem eigenen Server.",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Ich habe einen Discord-Bot mit individuellen Kommandos und umfangreichem Logging programmiert und erfolgreich auf meinem eigenen Linux-Server gehostet und verwaltet."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "Während dieses Projekts habe ich umfassende Erfahrung in der Bot-Programmierung gesammelt und erfolgreich einen Ubuntu-Server zur Verwaltung und Ausführung des Bots eingerichtet."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
+          "TEXT": "Ich habe gelernt, effektive Problemlösungsstrategien zu entwickeln sowie fremden Code zu analysieren, zu verstehen und erfolgreich weiterzuentwickeln."
+        }
+      },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Linux.svg",
       "SKILLTWO": "assets/img/skills/Python.svg",
@@ -82,11 +126,14 @@
   },
   "CONTACT": {
     "TITLE": "Kontakt",
+    "DESCRIPTION": "Ich freue mich darauf, spannende Projekte aktiv mitzugestalten. Kontaktieren Sie mich gerne, wenn Sie engagierte Unterstützung in der Webentwicklung oder bei innovativen Ideen suchen!",
     "NAME": "Dein Name",
     "EMAIL": "Deine E-Mail",
-    "MESSAGE": "Nachricht",
-    "SEND": "Absenden",
-    "PRIVACY_TEXT": "Ich akzeptiere die Datenschutzbestimmungen."
+    "MESSAGE": "Deine Nachricht",
+    "PRIVACY_PART1": "Ich habe die",
+    "PRIVACY_PART2": "Datenschutzbestimmungen",
+    "PRIVACY_PART3": "gelesen und willige in die Verarbeitung meiner Daten ein.",
+    "SEND": "Absenden"
   },
   "CERTIFICATES": {
     "TITLE": "Zertifikate",
@@ -104,10 +151,10 @@
     ]
   },
   "FOOTER": {
-    "COPYRIGHT": "© {{year}} Florian Irving. Alle Rechte vorbehalten.",
+    "COPYRIGHT": "©  Florian Irving {{year}}",
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Impressum",
-    "PRIVACY": "Datenschutz"
+    "PRIVACY": "Rechtlicher Hinweis"
   }
 }

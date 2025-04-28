@@ -35,45 +35,89 @@
     "BACKEND": ["Node.js", "Express", "MongoDB"],
     "TOOLS": ["Git", "VS Code", "Figma"],
     "LEARNINGNOW": "I am currently learning:",
-    "LEARNINGNEXT": "I love constantly pushing my skills, discovering new technologies, and building real solutions from them. What is “state of the art” today may be outdated tomorrow — and that's exactly what makes this job so exciting for me."
+    "LEARNINGNEXT": "I love discovering new technologies, developing solutions and constantly evolving - that's what makes this job exciting for me."
   },
   "PROJECTS": {
     "TITLE": "My Projects",
     "PROJECTONE": {
-      "TITLE": "Portfolio Website",
-      "DESCRIPTIONONE": "My personal portfolio website with Angular, animations, and i18n.",
-      "DESCRIPTIONTWO": "My personal website with Angular and multilingual support.",
-      "DESCRIPTIONTHREE": "My personal website with Angular and multilingual support.",
+      "TITLE": "1. Portfolio Website",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "My personal portfolio website was developed using Angular and includes modern animations as well as full multilingual support (i18n) to best address an international audience."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "My personal web business card was built with Angular and, thanks to integrated multilingual support, offers an optimal layout and user experience for an international audience."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "New experience through Angular",
+          "TEXT": "Through working with Angular, I gained in-depth experience in modern web development, component structure, data binding, routing, and handling multilingual content."
+        }
+      },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Angular.svg",
       "SKILLTWO": "assets/img/skills/Css.svg",
       "SKILLTHREE": "assets/img/skills/i18next.png"
     },
     "PROJECTTWO": {
-      "TITLE": "2D Game Engine",
-      "DESCRIPTIONONE": "A 2D game with Canvas & Vanilla JavaScript – including boss fights.",
-      "DESCRIPTIONTWO": "A game application with HTML5 Canvas and Vanilla JavaScript.",
-      "DESCRIPTIONTHREE": "A game application with HTML5 Canvas and Vanilla JavaScript.",
+      "TITLE": "2. 2D Game Engine",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "This game application was created using HTML5 Canvas and Vanilla JavaScript, with a strong focus on the technical implementation of animations and precise game mechanics."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "My 2D game built with HTML5 Canvas and Vanilla JavaScript offers a dynamic gameplay experience with exciting boss fights, detailed animations, and a well-thought-out level design."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "Through this project, I gained valuable experience and discovered the many possibilities JavaScript, HTML, and CSS offer in modern web development."
+        }
+      },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/html.svg",
       "SKILLTWO": "assets/img/skills/Javascript.svg",
       "SKILLTHREE": "assets/img/skills/Css.svg"
     },
     "PROJECTTHREE": {
-      "TITLE": "Join",
-      "DESCRIPTIONONE": "A great project",
-      "DESCRIPTIONTWO": "A great project",
-      "DESCRIPTIONTHREE": "A great project",
+      "TITLE": "3. Join",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "TO BE EDITED"
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "TO BE EDITED2"
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "TO BE EDITED3"
+        }
+      },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Javascript.svg",
       "SKILLTWO": "assets/img/skills/API.svg",
       "SKILLTHREE": "assets/img/skills/scrum.svg"
     },
     "PROJECTFOUR": {
-      "TITLE": "Discord Bot",
-      "DESCRIPTIONONE": "A bot with commands and logging – hosted on my own server.",
-      "DESCRIPTIONTWO": "A bot with commands and logging – hosted on my own server.",
-      "DESCRIPTIONTHREE": "A bot with commands and logging – hosted on my own server.",
+      "TITLE": "4. Discord Bot",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "I developed a Discord bot with custom commands and extensive logging, and successfully hosted and managed it on my own Linux server."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I organized my workflow",
+          "TEXT": "During this project, I gained extensive experience in bot development and successfully set up a Ubuntu server to manage and run the bot."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My experience with teamwork",
+          "TEXT": "I learned to develop effective problem-solving strategies, to analyze and understand foreign code, and to successfully continue its development."
+        }
+      },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Linux.svg",
       "SKILLTWO": "assets/img/skills/Python.svg",
@@ -84,9 +128,11 @@
     "TITLE": "Contact",
     "NAME": "Your Name",
     "EMAIL": "Your Email",
-    "MESSAGE": "Message",
-    "SEND": "Send",
-    "PRIVACY_TEXT": "I accept the privacy policy."
+    "MESSAGE": "Your Message",
+    "PRIVACY_PART1": "I have read the",
+    "PRIVACY_PART2": "privacy policy",
+    "PRIVACY_PART3": "and consent to the processing of my data.",
+    "SEND": "Send"
   },
   "CERTIFICATES": {
     "TITLE": "Certificates",
@@ -104,10 +150,10 @@
     ]
   },
   "FOOTER": {
-    "COPYRIGHT": "© {{year}} Florian Irving. All rights reserved.",
+    "COPYRIGHT": "©  Florian Irving {{year}}",
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Imprint",
-    "PRIVACY": "Privacy Policy"
+    "PRIVACY": "Legal Notice"
   }
 }
