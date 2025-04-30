@@ -72,6 +72,9 @@
         opacity: 1;
       }
     }
+    .shapeThree {
+      display: none;
+    }
   }
 
   .right {
@@ -135,7 +138,6 @@
       line-height: 120%;
       display: flex;
       justify-content: center;
-      font-size: 88px;
     }
 
     .jobTitle {
@@ -145,7 +147,6 @@
       line-height: 120%;
       display: flex;
       justify-content: center;
-      font-size: 44px;
     }
   }
   .cta {

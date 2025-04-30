@@ -14,6 +14,7 @@ export class IntroComponent {
   isHoveredMail: boolean = false;
   isHoveredLinkedin: boolean = false;
   isHoveredGitHub: boolean = false;
+  isMenuOpen: boolean = false;
 
   constructor() {}
 }

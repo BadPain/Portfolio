@@ -1,9 +1,205 @@
 @import "../../../styles/mixins";
 
 @media (max-width: 1200px) {
-  .profilePicture {
-    width: 100%;
+  .intro {
+    .left {
+      .profilePicture {
+        width: 100%;
+        height: auto;
+        min-height: 80%;
+      }
+    }
+    .right {
+      .name {
+        font-size: 60px;
+      }
+      .jobTitle {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .intro {
+    .left {
+      .profilePicture {
+        width: 100%;
+        height: auto;
+        min-height: 60%;
+      }
+    }
+    .right {
+      .name {
+        font-size: 50px;
+      }
+      .jobTitle {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// Hardbreak by 850px
+
+@media (max-width: 850px) {
+  :host {
     height: auto;
-    min-height: 50%;
+    // min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+
+  .intro {
+    height: auto;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .burgerMenu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      cursor: pointer;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .mobileMenuOverlay {
+      // position: fixed;
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 313px;
+      height: 326px;
+      background: url("./../../../assets/img/otherSpecs/shape3.svg") no-repeat
+        center center;
+      background-size: cover;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      transform: scale(1.5, 1.5);
+      animation: fadeIn 0.3s ease;
+
+      .mobileNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        a {
+          font-size: 24px;
+          color: white;
+          text-decoration: none;
+          font-family: "Josefin Sans", sans-serif;
+        }
+
+        .langSwitch {
+          margin-top: 1.5rem;
+          font-size: 18px;
+          color: white;
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .left {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2rem 0;
+
+      .shapeWrapper {
+        display: none;
+      }
+
+      .shapeWrapperTwo {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        .shapeThree {
+          display: block;
+          width: 350px;
+          height: auto;
+        }
+      }
+
+      .profilePicture {
+        position: relative;
+        z-index: 2;
+        top: 100px;
+        width: 450px;
+        // height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      // padding: 1rem;
+      z-index: 1;
+
+      .containerText {
+        text-align: center;
+        margin-top: 1rem;
+
+        .logoMain {
+          position: fixed;
+          top: 30px;
+          left: 30px;
+          width: 75px;
+          height: 75px;
+        }
+
+        .name {
+          font-size: 40px;
+          margin-top: 1rem;
+        }
+
+        .jobTitle {
+          font-size: 30px;
+          margin-top: 0.5rem;
+        }
+
+        .socials {
+          display: none;
+        }
+      }
+
+      .cta {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }

@@ -1,10 +1,28 @@
 <section class="intro">
+    <div class="burgerMenu" (click)="isMenuOpen = !isMenuOpen">
+        <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" />
+    </div>
+    <div class="mobileMenuOverlay" *ngIf="isMenuOpen">
+        <nav class="mobileNav">
+            <a href="#why-me">Why Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <div class="langSwitch">
+                <span>DE</span> | <span>EN</span>
+            </div>
+        </nav>
+    </div>
     <section class="left">
         <div class="shapeWrapper">
             <img class="shapeOne" src="assets/img/otherSpecs/shape.svg" alt="">
             <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="">
         </div>
+        <div class="shapeWrapperTwo">
+            <img class="shapeThree" src="assets/img/otherSpecs/shape3.svg" alt="">
+        </div>
         <img class="profilePicture" src="assets/img/pictures/Ich_cutted.png" alt="">
+
     </section>
     <section class="right">
         <div class="containerText">
