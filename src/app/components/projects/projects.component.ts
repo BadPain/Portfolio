@@ -99,7 +99,7 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTTWO.SKILLTHREEENAME',
       ],
       link: 'https://www.irving-webdev.de/projects/ElPolloLoco/index.html',
-      repo: 'https://github.com/BadPain/2d-game',
+      repo: 'https://github.com/BadPain/ElPolloLoco',
     },
     {
       titleKey: 'PROJECTS.PROJECTTHREE.TITLE',
@@ -128,7 +128,7 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTTHREE.SKILLTHREEENAME',
       ],
       link: 'https://www.irving-webdev.de/projects/Join/html/login.html',
-      repo: 'https://github.com/BadPain/Join',
+      repo: 'https://github.com/StefanNagel0/Join',
     },
     {
       titleKey: 'PROJECTS.PROJECTFOUR.TITLE',
