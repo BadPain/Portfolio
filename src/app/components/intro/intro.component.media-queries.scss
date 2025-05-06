@@ -56,7 +56,7 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: row-reverse;
-      margin: 20px 20px 0 20px; 
+      margin: 20px 20px 0 20px;
       width: 100%;
       .burgerMenu {
         z-index: 10;
@@ -81,8 +81,7 @@
     }
     .mobileMenuOverlay {
       position: absolute;
-      top: 20%;
-      left: 30%;
+      top: 25%;
       transform: translate(-50%, -50%);
       z-index: 1;
       width: 313px;
@@ -99,25 +98,36 @@
       animation: fadeIn 0.3s ease;
 
       .mobileNav {
+        font-family: Josefin Sans;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
 
         a {
-          font-size: 24px;
-          color: white;
+          font-size: 22px;
+          color: rgba(38, 46, 52, 1);
           text-decoration: none;
           font-family: "Josefin Sans", sans-serif;
+        }
+
+        a:active {
+          color: rgb(212, 231, 241);
         }
 
         .langSwitch {
           margin-top: 1.5rem;
           font-size: 18px;
-          color: white;
+          color: rgba(38, 46, 52, 1);
           display: flex;
           gap: 0.5rem;
+          a:hover {
+            color: rgb(212, 231, 241);
+          }
         }
       }
     }
@@ -181,11 +191,6 @@
 
         .logoMain {
           display: none;
-          // position: fixed;
-          // top: 30px;
-          // left: 30px;
-          // width: 75px;
-          // height: 75px;
         }
 
         .socials {

@@ -28,9 +28,9 @@ export class AboutmeComponent {
           textKey: 'ABOUTME.FIRSTANIMATION.FIRSTPART',
           color: 'rgb(137, 188, 255)',
         },
-        { 
-          textKey: 'ABOUTME.FIRSTANIMATION.SECONDPART', 
-          color: 'rgb(248, 245, 236)'
+        {
+          textKey: 'ABOUTME.FIRSTANIMATION.SECONDPART',
+          color: 'rgb(248, 245, 236)',
         },
         {
           textKey: 'ABOUTME.FIRSTANIMATION.THIRDPART',
@@ -64,9 +64,9 @@ export class AboutmeComponent {
           textKey: 'ABOUTME.THIRDANIMATION.FIRSTPART',
           color: 'rgb(137, 188, 255)',
         },
-        { 
-          textKey: 'ABOUTME.THIRDANIMATION.SECONDPART', 
-          color: 'rgb(248, 245, 236)'
+        {
+          textKey: 'ABOUTME.THIRDANIMATION.SECONDPART',
+          color: 'rgb(248, 245, 236)',
         },
         {
           textKey: 'ABOUTME.THIRDANIMATION.THIRDPART',
@@ -77,14 +77,35 @@ export class AboutmeComponent {
     },
   ];
 
+  /**
+   * Returns the icon of the current animation item.
+   *
+   * If the current index is out of bounds, an empty string is returned.
+   */
   get currentIcon() {
     return this.animationItems[this.currentIndex]?.icon || '';
   }
 
+  /**
+   * Returns the segments of the current animation item.
+   *
+   * If the current index is out of bounds, an empty array is returned.
+   * Each segment contains a text key, color, and optionally a translated text.
+   */
   get currentSegments() {
     return this.animationItems[this.currentIndex]?.segments || [];
   }
 
+  /**
+   * Returns the visible length of the given segment.
+   *
+   * This method is used in the template to display the visible part of the
+   * segment. The visible length is determined by the index of the segment
+   * in the current animation item. If the segment is not found in the
+   * current animation item, 0 is returned.
+   * @param segment The segment for which the visible length is returned.
+   * @returns The visible length of the segment, or 0 if the segment is not found.
+   */
   getVisibleSegmentLength(segment: any): number {
     const index = this.currentSegments.indexOf(segment);
     return this.visibleLengths[index] || 0;
@@ -92,6 +113,12 @@ export class AboutmeComponent {
 
   constructor(private translate: TranslateService) {}
 
+  /**
+   * Initializes the component.
+   *
+   * Loads the texts for the animation items, and subscribes to the language change event.
+   * When the language changes, the texts are reloaded and the animation is reset.
+   */
   ngOnInit() {
     this.loadTexts();
     this.translate.onLangChange.subscribe(() => {
@@ -101,6 +128,17 @@ export class AboutmeComponent {
     });
   }
 
+  /**
+   * Loads and translates the text segments for the current animation items.
+   *
+   * This method retrieves translations for each text segment using the
+   * translation service and updates the `flatText` and `translated` fields
+   * of each animation item. Once all translations are loaded, it clears
+   * the typing timer and resets the `visibleLengths` array. Finally, it
+   * initiates the typing animation.
+   *
+   * @returns A promise that resolves once all text segments are translated.
+   */
   async loadTexts() {
     const translationPromises = this.animationItems.map(async (item) => {
       const texts = await Promise.all(
@@ -117,6 +155,20 @@ export class AboutmeComponent {
     this.startTyping();
   }
 
+  /**
+   * Manages the typing animation for the text segments.
+   *
+   * This method animates the text segments by incrementally revealing and
+   * hiding characters. It operates in two phases: typing and deleting. In
+   * the typing phase, it iteratively reveals characters of each text
+   * segment until all segments are fully visible. Once typing is complete,
+   * it switches to the deleting phase, where it hides characters until all
+   * segments are empty. After deleting, it advances to the next animation
+   * item and repeats the process.
+   *
+   * The typing speed is controlled by a timer, with different intervals for
+   * typing and deleting. It also resets the animation when the language changes.
+   */
   startTyping() {
     const segments = this.currentSegments;
 

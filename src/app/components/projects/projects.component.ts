@@ -30,17 +30,17 @@ interface Project {
 export class ProjectsComponent {
   responsiveProject: ResponsiveProject[] = [
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTONE'
+      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTONE',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTWO'
+      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTWO',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTHREE'
+      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTHREE',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTFOUR'
-    }
+      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTFOUR',
+    },
   ];
   projects: Project[] = [
     {
@@ -163,6 +163,11 @@ export class ProjectsComponent {
 
   activeProjectIndex = 0;
 
+  /**
+   * Sets the active project index to the given index.
+   *
+   * @param index - The index of the project to set as active.
+   */
   setActiveProject(index: number) {
     this.activeProjectIndex = index;
   }

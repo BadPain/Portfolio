@@ -7,7 +7,7 @@ import { ContactComponent } from '../../components/contact/contact.component';
 import { CertificatesComponent } from '../../components/certificates/certificates.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { AboutmeComponent } from "../../components/aboutme/aboutme.component";
+import { AboutmeComponent } from '../../components/aboutme/aboutme.component';
 
 @Component({
   selector: 'app-home',
@@ -21,9 +21,9 @@ import { AboutmeComponent } from "../../components/aboutme/aboutme.component";
     CertificatesComponent,
     FooterComponent,
     NavbarComponent,
-    AboutmeComponent
-],
+    AboutmeComponent,
+  ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {}

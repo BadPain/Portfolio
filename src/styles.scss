@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "styles/mixins";
-@import 'styles/fonts';
+@import "styles/fonts";
 
 * {
   margin: 0;
@@ -8,6 +8,6 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }

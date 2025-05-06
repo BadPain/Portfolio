@@ -11,12 +11,16 @@
     </div>
     <div class="mobileMenuOverlay" *ngIf="isMenuOpen">
         <nav class="mobileNav">
-            <a href="#why-me">Why Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#aboutMe" [ngClass]="{'active': activeLink === 'aboutMe'}" (click)="setActive('aboutMe')">{{
+                'NAV.ABOUTME' | translate }}</a>
+            <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActive('skills')">{{
+                'NAV.SKILLS' | translate }}</a>
+            <a href="#projects" [ngClass]="{'active': activeLink === 'projects'}" (click)="setActive('projects')">{{
+                'NAV.PROJECTS' | translate }}</a>
+            <a href="#contact" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')">{{
+                'NAV.CONTACT' | translate }}</a>
             <div class="langSwitch">
-                <span>DE</span> | <span>EN</span>
+                <app-language-switcher></app-language-switcher>
             </div>
         </nav>
     </div>

@@ -18,6 +18,11 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
 export class NavbarComponent {
   activeLink: String = '';
 
+  /**
+   * Sets the active link to the provided link.
+   * 
+   * @param link - The link string to set as active.
+   */
   setActive(link: string) {
     this.activeLink = link;
   }

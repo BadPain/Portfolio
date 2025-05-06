@@ -91,7 +91,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 445px;
   height: 124px;
   background-color: rgb(38, 46, 52);
@@ -315,4 +315,9 @@
     opacity: 0.6;
   }
 }
+
+.responsiveScrollTopButtonContainer{
+  display: none;
+}
+
 @import "contact.component.media-queries";

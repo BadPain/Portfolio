@@ -20,13 +20,19 @@ export class SkillsComponent {
     { name: 'Firebase', image: 'assets/img/skills/Firebase.svg' },
     { name: 'Scrum', image: 'assets/img/skills/scrum.svg' },
     { name: 'Typescript', image: 'assets/img/skills/TypeScript.svg' },
-    { name: 'Material Design', image: 'assets/img/skills/material-design.svg' }
+    { name: 'Material Design', image: 'assets/img/skills/material-design.svg' },
   ];
 
   frontendSkills: string[] = [];
   backendSkills: string[] = [];
   tools: string[] = [];
 
+  /**
+   * Initializes the SkillsComponent by subscribing to translation keys for frontend,
+   * backend, and tools skills, and assigns the translated values to their respective arrays.
+   *
+   * @param translate - Service for handling translation and localization.
+   */
   constructor(private translate: TranslateService) {
     this.translate
       .get('SKILLS.FRONTEND')

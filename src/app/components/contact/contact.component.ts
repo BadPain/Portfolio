@@ -16,6 +16,12 @@ export class ContactComponent {
   message: string = '';
   privacyAccepted: boolean = false;
 
+  /**
+   * Sends the contact form.
+   * If the user has not accepted the privacy policy, an alert is shown and the form is not sent.
+   * Otherwise, the form data is logged to the console and an alert is shown.
+   * The form is then reset.
+   */
   onSubmit() {
     if (!this.privacyAccepted) {
       alert('Bitte bestätige die Datenschutzbestimmungen.');
@@ -33,6 +39,9 @@ export class ContactComponent {
     this.message = '';
   }
 
+  /**
+   * Smoothly scrolls to the top of the page.
+   */
   scrollToTop() {
     window.scrollTo({
       top: 0,
