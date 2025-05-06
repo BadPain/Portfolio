@@ -160,22 +160,17 @@
     "PRIVACY_PART1": "I have read the",
     "PRIVACY_PART2": "privacy policy",
     "PRIVACY_PART3": "and consent to the processing of my data.",
-    "SEND": "Send"
-  },
-  "CERTIFICATES": {
-    "TITLE": "Certificates",
-    "LIST": [
-      {
-        "TITLE": "Frontend Web Development",
-        "PROVIDER": "Developer Academy",
-        "LINK": "assets/certificates/DAZertifikat.pdf"
-      },
-      {
-        "TITLE": "Electrotechnics",
-        "PROVIDER": "Company Lippert GmbH",
-        "LINK": "assets/certificates/ausbildung.pdf"
-      }
-    ]
+    "SEND": "Send",
+    "ERROR_NAME_REQUIRED": "Please enter your name.",
+    "ERROR_NAME_MINLENGTH": "Your name must be at least 3 characters long.",
+    "ERROR_EMAIL_REQUIRED": "Please enter your email address.",
+    "ERROR_EMAIL_INVALID": "Please enter a valid email address.",
+    "ERROR_MESSAGE_REQUIRED": "Please enter a message.",
+    "ERROR_MESSAGE_MINLENGTH": "At least 25 characters required.",
+    "ERROR_MESSAGE_MAXLENGTH": "At most 500 characters required.",
+    "ERROR_PRIVACY": "Please confirm data protection.",
+    "ERROR_SEND": "An error occurred while sending. Please try again later.",
+    "SUCCESS_SEND": "Thank you, your message was successfully sent."
   },
   "FOOTER": {
     "COPYRIGHT": "©  Florian Irving {{year}}",
@@ -183,5 +178,40 @@
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Imprint",
     "PRIVACY": "Legal Notice"
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "LAST_UPDATED": "Last updated: May 2025",
+    "SECTIONS": {
+      "RESPONSIBLE": "Responsible Party",
+      "DATA_COLLECTION": "Data Collection",
+      "CONTACT_FORM": "Contact Form",
+      "LOG_FILES": "Server Log Files",
+      "RIGHTS": "Your Rights",
+      "REVOCATION": "Revocation of Consent",
+      "SECURITY": "Encryption / Security",
+      "HOSTING": "Hosting"
+    },
+    "DATA_COLLECTION_TEXT_1": "No personal data is automatically stored or analyzed when visiting this website. No cookies or tracking are used.",
+    "CONTACT_FORM_TEXT_1": "When contacting me via the contact form, the data you provide (e.g. name, email, message) will only be used to process your request.",
+    "CONTACT_FORM_TEXT_2": "Processing is based on your consent (Art. 6 para. 1 lit. a GDPR).",
+    "CONTACT_FORM_TEXT_3": "The data will not be passed on to third parties and will be deleted after your request has been completed.",
+    "LOG_FILES_TEXT_1": "The web server automatically stores technical data for each request:",
+    "LOG_FILES_IP": "IP address",
+    "LOG_FILES_DATE": "Date and time",
+    "LOG_FILES_BROWSER": "Browser type/version",
+    "LOG_FILES_OS": "Operating system",
+    "LOG_FILES_TEXT_2": "These logs are used for error analysis only and are not linked to other data. No personal evaluation takes place.",
+    "RIGHTS_INTRO": "You have the following rights under the GDPR:",
+    "RIGHTS_ACCESS": "Access to your stored data (Art. 15 GDPR)",
+    "RIGHTS_CORRECTION": "Correction of inaccurate data (Art. 16 GDPR)",
+    "RIGHTS_DELETION": "Deletion of your data (Art. 17 GDPR)",
+    "RIGHTS_LIMITATION": "Limitation of processing (Art. 18 GDPR)",
+    "RIGHTS_OBJECTION": "Objection to data processing (Art. 21 GDPR)",
+    "RIGHTS_TRANSFER": "Data portability (Art. 20 GDPR)",
+    "RIGHTS_CONTACT": "To exercise your rights, please contact:",
+    "REVOCATION_TEXT": "You can revoke your consent at any time by emailing",
+    "SECURITY_TEXT": "This website uses HTTPS encryption. Your data is securely transmitted when submitting the contact form.",
+    "HOSTING_TEXT": "The website is hosted on a private server in Germany and is exclusively managed by Florian Irving."
   }
 }

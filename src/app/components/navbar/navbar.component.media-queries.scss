@@ -46,15 +46,13 @@
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 950px) {
   .navbar {
     .nav-links {
       gap: 50px;
     }
   }
 }
-
-// Hardbreak by 850px
 
 @media (max-width: 850px) {
   .navbar {

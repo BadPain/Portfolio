@@ -1,0 +1,74 @@
+:host {
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(38, 46, 52);
+  padding: 2rem;
+  height: 100vh;
+}
+
+.privacy-policy {
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  h1 {
+    color: rgb(137, 188, 255);
+    font-size: 40px;
+  }
+
+  h2 {
+    color: rgb(137, 188, 255);
+  }
+
+  a {
+    color: #1f5b99;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  p,
+  li {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 450px) {
+  :host {
+    padding: 0.5rem;
+  }
+  .privacy-policy {
+    h1 {
+      font-size: 30px;
+    }
+    p,
+    li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .privacy-policy {
+    h1 {
+      font-size: 25px;
+    }
+    p,
+    li {
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+  }
+}

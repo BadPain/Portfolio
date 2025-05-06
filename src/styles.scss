@@ -7,3 +7,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body.privacy-mode ::ng-deep .language-switcher {
+  background-color: #ff0000;
+  color: #ad1010;
+}

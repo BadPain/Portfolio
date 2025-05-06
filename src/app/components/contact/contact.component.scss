@@ -153,6 +153,11 @@
   color: rgba(137, 188, 217, 1);
 }
 
+.label-error {
+  color: #e53935;
+  font-weight: 500;
+}
+
 .nameAndEmail {
   display: flex;
 }
@@ -226,16 +231,16 @@
   color: rgba(137, 188, 217, 1);
 }
 
-.nameInput.ng-invalid.ng-touched,
-.emailInput.ng-invalid.ng-touched,
-.messageInput.ng-invalid.ng-touched {
-  border-color: rgba(255, 100, 100, 1);
-  background-color: rgba(255, 100, 100, 0.05);
-}
-
 .privacyContainer {
   display: flex;
   gap: 10px;
+}
+
+.error {
+  color: #e53935;
+  min-height: 20px;
+  font-size: 0.85rem;
+  margin-left: 35px;
 }
 
 .privacyCheckbox {
@@ -316,7 +321,7 @@
   }
 }
 
-.responsiveScrollTopButtonContainer{
+.responsiveScrollTopButtonContainer {
   display: none;
 }
 

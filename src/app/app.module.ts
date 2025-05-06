@@ -12,7 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { CertificatesComponent } from './components/certificates/certificates.component';
+import { CertificatesComponent } from './components/privacypolicy/privacypolicy.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
 

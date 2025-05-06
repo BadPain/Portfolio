@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
@@ -16,27 +18,30 @@ export class ContactComponent {
   message: string = '';
   privacyAccepted: boolean = false;
 
-  /**
-   * Sends the contact form.
-   * If the user has not accepted the privacy policy, an alert is shown and the form is not sent.
-   * Otherwise, the form data is logged to the console and an alert is shown.
-   * The form is then reset.
-   */
   onSubmit() {
     if (!this.privacyAccepted) {
       alert('Bitte bestätige die Datenschutzbestimmungen.');
       return;
     }
-    console.log(
-      'Kontaktformular gesendet:',
-      this.name,
-      this.email,
-      this.message
-    );
-    alert('Danke für deine Nachricht!');
-    this.name = '';
-    this.email = '';
-    this.message = '';
+
+    const payload = {
+      name: this.name,
+      email: this.email,
+      message: this.message,
+    };
+
+    this.http.post('/portfolio/kontakt.php', payload).subscribe({
+      next: () => {
+        alert('Danke für deine Nachricht!');
+        this.name = '';
+        this.email = '';
+        this.message = '';
+        this.privacyAccepted = false;
+      },
+      error: () => {
+        alert('Fehler beim Senden. Bitte versuche es später erneut.');
+      },
+    });
   }
 
   /**
@@ -48,4 +53,6 @@ export class ContactComponent {
       behavior: 'smooth',
     });
   }
+
+  constructor(private http: HttpClient) {}
 }

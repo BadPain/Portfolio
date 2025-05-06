@@ -25,40 +25,70 @@
     <div class="contentDown">
       <form (ngSubmit)="onSubmit()" class="contactForm" #contactForm="ngForm">
         <div class="nameAndEmail">
-          <label class="name">
-            {{ 'CONTACT.NAME' | translate }}
+          <label class="name" [class.label-error]="nameInput.invalid && nameInput.touched">
+            {{
+            nameInput.invalid && nameInput.errors?.['minlength']
+            ? ('CONTACT.ERROR_NAME_MINLENGTH' | translate)
+            : nameInput.invalid && nameInput.errors?.['required']
+            ? ('CONTACT.ERROR_NAME_REQUIRED' | translate)
+            : ('CONTACT.NAME' | translate)
+            }}
             <input type="text" class="nameInput" name="name" [(ngModel)]="name" minlength="3" required
-              #nameInput="ngModel"
-              [placeholder]="nameInput.invalid && (nameInput.dirty || nameInput.touched) ? '' : ''" />
+              #nameInput="ngModel" [class.invalid]="nameInput.invalid && nameInput.touched" />
           </label>
-          <label class="email">
-            {{ 'CONTACT.EMAIL' | translate }}
+          <label class="email" [class.label-error]="emailInput.invalid && emailInput.touched">
+            {{
+            emailInput.invalid && emailInput.errors?.['pattern']
+            ? ('CONTACT.ERROR_EMAIL_INVALID' | translate)
+            : emailInput.invalid && emailInput.errors?.['required']
+            ? ('CONTACT.ERROR_EMAIL_REQUIRED' | translate)
+            : ('CONTACT.EMAIL' | translate)
+            }}
             <input type="email" class="emailInput" name="email" [(ngModel)]="email" required
               pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" #emailInput="ngModel"
-              [placeholder]="emailInput.invalid && (emailInput.dirty || emailInput.touched) ? '' : ''" />
+              [class.invalid]="emailInput.invalid && emailInput.touched" />
           </label>
         </div>
         <div>
-          <label class="message">
-            {{ 'CONTACT.MESSAGE' | translate }}
+          <label class="message" [class.label-error]="
+    (messageInput.errors?.['minlength'] && messageInput.touched) ||
+    (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
+  ">
+            {{
+            messageInput.errors?.['minlength']
+            ? ('CONTACT.ERROR_MESSAGE_MINLENGTH' | translate)
+            : messageInput.errors?.['required']
+            ? ('CONTACT.ERROR_MESSAGE_REQUIRED' | translate)
+            : ('CONTACT.MESSAGE' | translate)
+            }}
             <textarea [(ngModel)]="message" #messageInput="ngModel" class="messageInput" name="message" minlength="25"
-              maxlength="250" rows="4" required
-              [placeholder]="messageInput.invalid && (messageInput.dirty || messageInput.touched) ? '' : ''"></textarea>
+              maxlength="250" rows="4" required [class.invalid]="
+      (messageInput.errors?.['minlength'] && messageInput.touched) ||
+      (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
+    ">
+  </textarea>
           </label>
-          <label class="privacyContainer">
-            <input type="checkbox" class="privacyCheckbox" [(ngModel)]="privacyAccepted" name="privacyAccepted"
-              required />
+          <label class="privacyContainer" [class.label-error]="privacy.invalid && privacy.touched">
+            <input type="checkbox" name="privacyAccepted" class="privacyCheckbox" [(ngModel)]="privacyAccepted" required
+              #privacy="ngModel" />
             <span class="customCheckbox"></span>
             <p class="privacyText">
               {{ 'CONTACT.PRIVACY_PART1' | translate }}
-              <a class="blueText" href="/privacy-policy" target="_blank">{{ 'CONTACT.PRIVACY_PART2' | translate }}</a>
+              <a class="privacy" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+                {{ 'CONTACT.PRIVACY_PART2' | translate }}
+              </a>
               {{ 'CONTACT.PRIVACY_PART3' | translate }}
             </p>
           </label>
+          <div class="error">
+            <span *ngIf="privacy.invalid && privacy.dirty">
+              {{ 'CONTACT.ERROR_PRIVACY' | translate }}
+            </span>
+          </div>
         </div>
         <div class="sendButtonContainer">
-          <button type="submit" [class.activeSendButton]="privacyAccepted" [class.inactiveSendButton]="!privacyAccepted"
-            [disabled]="!privacyAccepted" class="sendButton" [disabled]="!contactForm.form.valid">
+          <button type="submit" class="sendButton" [class.activeSendButton]="privacyAccepted"
+            [class.inactiveSendButton]="!privacyAccepted" [disabled]="!privacyAccepted || !contactForm.form.valid">
             {{ 'CONTACT.SEND' | translate }}
           </button>
         </div>

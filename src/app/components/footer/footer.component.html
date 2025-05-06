@@ -1,7 +1,9 @@
 <footer>
   <section class="footerWrapper mainFooter">
     <nav>
-      <a href="/datenschutz">{{ 'FOOTER.PRIVACY' | translate }}</a>
+      <a class="privacy" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+        {{ 'FOOTER.PRIVACY' | translate }}
+      </a>
       <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
     </nav>
     <img class="logo" src="assets/img/logo/LogoFooter.svg" alt="">
@@ -49,7 +51,9 @@
       </a>
     </div>
     <nav class="responsiveNav">
-      <a class="privacy" href="/datenschutz">{{ 'FOOTER.PRIVACY' | translate }}</a>
+      <a class="privacy" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+        {{ 'FOOTER.PRIVACY' | translate }}
+      </a>
       <p class="copyright">{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
     </nav>
   </section>

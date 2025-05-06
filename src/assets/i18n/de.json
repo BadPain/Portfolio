@@ -160,22 +160,17 @@
     "PRIVACY_PART1": "Ich habe die",
     "PRIVACY_PART2": "Datenschutzbestimmungen",
     "PRIVACY_PART3": "gelesen und willige in die Verarbeitung meiner Daten ein.",
-    "SEND": "Absenden"
-  },
-  "CERTIFICATES": {
-    "TITLE": "Zertifikate",
-    "LIST": [
-      {
-        "TITLE": "Frontend Web Development",
-        "PROVIDER": "Developer Academy",
-        "LINK": "assets/certificates/DAZertifikat.pdf"
-      },
-      {
-        "TITLE": "Elektrotechnik",
-        "PROVIDER": "Firma Lippert GmbH",
-        "LINK": "assets/certificates/ausbildung.pdf"
-      }
-    ]
+    "SEND": "Absenden",
+    "ERROR_NAME_REQUIRED": "Bitte gib deinen Namen ein.",
+    "ERROR_NAME_MINLENGTH": "Dein Name muss mindestens 3 Zeichen lang sein.",
+    "ERROR_EMAIL_REQUIRED": "Bitte gib deine E-Mail-Adresse ein.",
+    "ERROR_EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "ERROR_MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
+    "ERROR_MESSAGE_MINLENGTH": "Mindestens 25 Zeichen nötig.",
+    "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen nötig.",
+    "ERROR_PRIVACY": "Datenschutz bitte bestätigen.",
+    "ERROR_SEND": "Fehler beim Senden. Bitte versuche es später erneut.",
+    "SUCCESS_SEND": "Vielen Dank, Ihre Nachricht wurde erfolgreich versendet."
   },
   "FOOTER": {
     "COPYRIGHT": "©  Florian Irving {{year}}",
@@ -183,5 +178,40 @@
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Impressum",
     "PRIVACY": "Rechtlicher Hinweis"
+  },
+  "PRIVACY": {
+    "TITLE": "Datenschutzerklärung",
+    "LAST_UPDATED": "Letzte Aktualisierung: Mai 2025",
+    "SECTIONS": {
+      "RESPONSIBLE": "Verantwortlicher",
+      "DATA_COLLECTION": "Datenerhebung",
+      "CONTACT_FORM": "Kontaktformular",
+      "LOG_FILES": "Server-Log-Dateien",
+      "RIGHTS": "Ihre Rechte",
+      "REVOCATION": "Widerruf der Einwilligung",
+      "SECURITY": "Verschlüsselung / Sicherheit",
+      "HOSTING": "Hosting"
+    },
+    "DATA_COLLECTION_TEXT_1": "Beim Besuch dieser Website werden keine personenbezogenen Daten automatisch gespeichert oder analysiert. Es werden keine Cookies verwendet und kein Tracking durchgeführt.",
+    "CONTACT_FORM_TEXT_1": "Wenn Sie mich über das Kontaktformular kontaktieren, werden die dort eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.",
+    "CONTACT_FORM_TEXT_2": "Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).",
+    "CONTACT_FORM_TEXT_3": "Die Daten werden nicht an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht.",
+    "LOG_FILES_TEXT_1": "Der Webserver speichert bei jeder Anfrage automatisch technische Daten:",
+    "LOG_FILES_IP": "IP-Adresse",
+    "LOG_FILES_DATE": "Datum und Uhrzeit",
+    "LOG_FILES_BROWSER": "Browsertyp/-version",
+    "LOG_FILES_OS": "Betriebssystem",
+    "LOG_FILES_TEXT_2": "Diese Logs dienen ausschließlich der Fehleranalyse und werden nicht mit anderen Daten zusammengeführt. Eine personenbezogene Auswertung findet nicht statt.",
+    "RIGHTS_INTRO": "Sie haben folgende Rechte gemäß DSGVO:",
+    "RIGHTS_ACCESS": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+    "RIGHTS_CORRECTION": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+    "RIGHTS_DELETION": "Löschung Ihrer Daten (Art. 17 DSGVO)",
+    "RIGHTS_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+    "RIGHTS_OBJECTION": "Widerspruch gegen die Datenverarbeitung (Art. 21 DSGVO)",
+    "RIGHTS_TRANSFER": "Datenübertragbarkeit (Art. 20 DSGVO)",
+    "RIGHTS_CONTACT": "Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:",
+    "REVOCATION_TEXT": "Sie können Ihre Einwilligung jederzeit widerrufen. Senden Sie dazu eine E-Mail an",
+    "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Ihre Daten werden beim Absenden des Kontaktformulars sicher übertragen.",
+    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Florian Irving verwaltet."
   }
 }

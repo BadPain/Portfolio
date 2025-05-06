@@ -156,8 +156,8 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTFOUR.SKILLTWOENAME',
         'PROJECTS.PROJECTFOUR.SKILLTHREEENAME',
       ],
-      link: 'https://www.irving-webdev.de/projects/discord-bot/index.html',
-      repo: 'https://github.com/BadPain/DCBot',
+      link: 'https://github.com/BadPain/Bot',
+      repo: 'https://github.com/BadPain/Bot',
     },
   ];
 
