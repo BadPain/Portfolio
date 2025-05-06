@@ -128,7 +128,7 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTTHREE.SKILLTHREEENAME',
       ],
       link: 'https://www.irving-webdev.de/projects/Join/html/login.html',
-      repo: 'https://github.com/StefanNagel0/Join',
+      repo: 'https://github.com/BadPain/join',
     },
     {
       titleKey: 'PROJECTS.PROJECTFOUR.TITLE',
