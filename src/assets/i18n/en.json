@@ -38,9 +38,17 @@
     "LEARNINGNEXT": "I love discovering new technologies, developing solutions and constantly evolving - that's what makes this job exciting for me."
   },
   "PROJECTS": {
+    "RESPONSIVE": {
+      "PROJECTONE": "1. Project",
+      "PROJECTTWO": "2. Project",
+      "PROJECTTHREE": "3. Project",
+      "PROJECTFOUR": "4. Project"
+    },
     "TITLE": "My Projects",
     "PROJECTONE": {
       "TITLE": "1. Portfolio Website",
+      "TITLEWO": "Portfolio Website",
+      "DURATION": "Duration: 2 Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
@@ -57,11 +65,16 @@
       },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Angular.svg",
+      "SKILLONENAME": "Angular",
       "SKILLTWO": "assets/img/skills/Css.svg",
-      "SKILLTHREE": "assets/img/skills/i18next.png"
+      "SKILLTWOENAME": "CSS",
+      "SKILLTHREE": "assets/img/skills/i18next.png",
+      "SKILLTHREEENAME": "i18next"
     },
     "PROJECTTWO": {
       "TITLE": "2. 2D Game Engine",
+      "TITLEWO": "2D Game Engine",
+      "DURATION": "Duration: 3 Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
@@ -78,11 +91,16 @@
       },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLONENAME": "HTML",
       "SKILLTWO": "assets/img/skills/Javascript.svg",
-      "SKILLTHREE": "assets/img/skills/Css.svg"
+      "SKILLTWOENAME": "JavaScript",
+      "SKILLTHREE": "assets/img/skills/Css.svg",
+      "SKILLTHREEENAME": "CSS"
     },
     "PROJECTTHREE": {
       "TITLE": "3. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Duration: 5 Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
@@ -99,11 +117,16 @@
       },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
       "SKILLTWO": "assets/img/skills/API.svg",
-      "SKILLTHREE": "assets/img/skills/scrum.svg"
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTFOUR": {
       "TITLE": "4. Discord Bot",
+      "TITLEWO": "Discord Bot",
+      "DURATION": "Duration: 2 Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
@@ -120,12 +143,17 @@
       },
       "SKILLHEADLINE": "Technologies",
       "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLONENAME": "Linux",
       "SKILLTWO": "assets/img/skills/Python.svg",
-      "SKILLTHREE": "assets/img/skills/API.svg"
+      "SKILLTWOENAME": "Python",
+      "SKILLTHREE": "assets/img/skills/API.svg",
+      "SKILLTHREEENAME": "API"
     }
   },
   "CONTACT": {
     "TITLE": "Contact",
+    "DESCRIPTION": "I am looking forward to actively helping to shape exciting projects. Feel free to contact me if you are looking for dedicated support in web development or innovative ideas!",
+    "LETSTALK": "Let us work together!",
     "NAME": "Your Name",
     "EMAIL": "Your Email",
     "MESSAGE": "Your Message",

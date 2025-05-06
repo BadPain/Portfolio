@@ -20,7 +20,6 @@
 }
 
 .projectTabs {
-  max-width: 1440px;
   display: flex;
   gap: 1rem;
   padding-left: 90px;
@@ -53,6 +52,10 @@
   }
 }
 
+.responsiveProjectTabs{
+  display: none;
+}
+
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -67,6 +70,10 @@
   gap: 3rem;
   align-items: flex-start;
   text-align: left;
+
+  .responsiveContent {
+    display: none;
+  }
 
   .projectContentLeft {
     flex: 1;

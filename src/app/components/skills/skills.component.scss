@@ -20,18 +20,19 @@
   .skillsSorting {
     display: flex;
     gap: 100px;
-
+    
     .skillsContainer {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
     }
-
+    .responsiveLearningNow {
+      display: none;
+    }
     .skillCard {
       display: flex;
       flex-direction: column;
       align-items: center;
-
       .skillImage {
         width: 64px;
         height: 64px;
@@ -64,7 +65,9 @@
   max-width: 350px;
   text-align: center;
   position: relative;
-
+  .responsiveShape {
+    display: none;
+  }
   .shapeWrapperSkills {
     position: absolute;
     width: 100%;
@@ -107,7 +110,27 @@
     }
   }
 }
-
+.responsiveButtonContainer {
+  display: none;
+  .responsiveButton {
+    align-self: flex-end;
+    margin-top: auto;
+    width: 160px;
+    height: 48px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: rgba(137, 188, 217, 1);
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    color: rgba(137, 188, 217, 1);
+    background-color: transparent;
+  }
+  .responsiveButton:hover {
+    background-color: rgb(63, 70, 74);
+  }
+}
 .learningNow,
 .learningNext {
   font-family: Josefin Sans;
@@ -117,7 +140,9 @@
   font-size: 16px;
   max-width: 200px;
 }
-
+.responsiveShape {
+  display: none;
+}
 .learningIcons {
   font-family: Josefin Sans;
   font-weight: 400;
@@ -135,3 +160,4 @@
     height: 40px;
   }
 }
+@import "./skills.component.media-queries";

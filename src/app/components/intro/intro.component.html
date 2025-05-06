@@ -1,6 +1,13 @@
 <section class="intro">
-    <div class="burgerMenu" (click)="isMenuOpen = !isMenuOpen">
-        <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" />
+    <div class="responsioveHeader">
+        <div class="burgerMenu" (click)="isMenuOpen = !isMenuOpen">
+            <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" />
+        </div>
+        <div class="responsiveLogoMain">
+            <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Florian Irving Logo" />
+            <p class="nameSmall">F. Irving</p>
+            <p class="jobTitleSmall">developer</p>
+        </div>
     </div>
     <div class="mobileMenuOverlay" *ngIf="isMenuOpen">
         <nav class="mobileNav">
@@ -22,7 +29,6 @@
             <img class="shapeThree" src="assets/img/otherSpecs/shape3.svg" alt="">
         </div>
         <img class="profilePicture" src="assets/img/pictures/Ich_cutted.png" alt="">
-
     </section>
     <section class="right">
         <div class="containerText">

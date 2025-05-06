@@ -38,9 +38,17 @@
     "LEARNINGNEXT": "Ich liebe es, neue Technologien zu entdecken, Lösungen zu entwickeln und mich ständig weiterzuentwickeln – genau das macht diesen Job für mich spannend."
   },
   "PROJECTS": {
+    "RESPONSIVE": {
+      "PROJECTONE": "1. Projekt",
+      "PROJECTTWO": "2. Projekt",
+      "PROJECTTHREE": "3. Projekt",
+      "PROJECTFOUR": "4. Projekt"
+    },
     "TITLE": "Meine Projekte",
     "PROJECTONE": {
       "TITLE": "1. Portfolio Website",
+      "TITLEWO": "Portfolio Website",
+      "DURATION": "Dauer: 2 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
@@ -57,11 +65,16 @@
       },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Angular.svg",
+      "SKILLONENAME": "Angular",
       "SKILLTWO": "assets/img/skills/Css.svg",
-      "SKILLTHREE": "assets/img/skills/i18next.png"
+      "SKILLTWOENAME": "CSS",
+      "SKILLTHREE": "assets/img/skills/i18next.png",
+      "SKILLTHREEENAME": "i18next"
     },
     "PROJECTTWO": {
       "TITLE": "2. 2D Game Engine",
+      "TITLEWO": "2D Spiel-Engine",
+      "DURATION": "Dauer: 3 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
@@ -78,32 +91,42 @@
       },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLONENAME": "HTML",
       "SKILLTWO": "assets/img/skills/Javascript.svg",
-      "SKILLTHREE": "assets/img/skills/Css.svg"
+      "SKILLTWOENAME": "JavaScript",
+      "SKILLTHREE": "assets/img/skills/Css.svg",
+      "SKILLTHREEENAME": "CSS"
     },
     "PROJECTTHREE": {
       "TITLE": "3. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Dauer: 5 Woche",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
-          "TEXT": "NOCH BEARBEITEN"
+          "TEXT": "Join ist ein webbasiertes Kanban-Teamboard, das ich gemeinsam mit meiner Gruppe entwickelt habe. Es ermöglicht die visuelle Organisation von Aufgaben, das Setzen von Prioritäten und eine effiziente Zusammenarbeit im Team – inspiriert von Tools wie Trello."
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
-          "TEXT": "NOCH BEARBEITEN2"
+          "TEXT": "Ich habe meine Aufgaben in klare Teilbereiche aufgeteilt: Planung, Umsetzung und Testing. Mit Hilfe von Kanban-Listen, Branch-Workflows und regelmäßigen Code-Reviews konnte ich strukturiert und fokussiert arbeiten – auch in stressigen Phasen."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
-          "TEXT": "NOCH BEARBEITEN3"
+          "TEXT": "Die Zusammenarbeit im Team war sehr bereichernd. Ich habe gelernt, Verantwortung zu übernehmen, klare Kommunikation zu pflegen und flexibel auf Herausforderungen zu reagieren. Besonders wichtig war der gegenseitige Austausch – sowohl technisch als auch organisatorisch."
         }
       },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
       "SKILLTWO": "assets/img/skills/API.svg",
-      "SKILLTHREE": "assets/img/skills/scrum.svg"
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTFOUR": {
       "TITLE": "4. Discord Bot",
+      "TITLEWO": "Discord Bot",
+      "DURATION": "Dauer: 2 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
@@ -120,13 +143,17 @@
       },
       "SKILLHEADLINE": "Technologien",
       "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLONENAME": "Linux",
       "SKILLTWO": "assets/img/skills/Python.svg",
-      "SKILLTHREE": "assets/img/skills/API.svg"
+      "SKILLTWOENAME": "Python",
+      "SKILLTHREE": "assets/img/skills/API.svg",
+      "SKILLTHREEENAME": "API"
     }
   },
   "CONTACT": {
     "TITLE": "Kontakt",
     "DESCRIPTION": "Ich freue mich darauf, spannende Projekte aktiv mitzugestalten. Kontaktieren Sie mich gerne, wenn Sie engagierte Unterstützung in der Webentwicklung oder bei innovativen Ideen suchen!",
+    "LETSTALK": "Lassen Sie uns zusammenarbeiten!",
     "NAME": "Dein Name",
     "EMAIL": "Deine E-Mail",
     "MESSAGE": "Deine Nachricht",

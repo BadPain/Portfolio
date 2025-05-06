@@ -39,38 +39,47 @@
     }
   }
 }
-
-// Hardbreak by 850px
-
 @media (max-width: 850px) {
   :host {
     height: auto;
-    // min-height: 100vh;
     padding-bottom: 2rem;
   }
 
   .intro {
     height: auto;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     flex-direction: column;
     align-items: center;
     position: relative;
+    .responsioveHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin: 20px 20px 0 20px; 
+      width: 100%;
+      .burgerMenu {
+        z-index: 10;
+        cursor: pointer;
 
-    .burgerMenu {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 10;
-      cursor: pointer;
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .responsiveLogoMain {
+        .name {
+          font-size: 40px;
+          margin-top: 1rem;
+        }
 
-      img {
-        width: 35px;
-        height: 35px;
+        .jobTitle {
+          font-size: 30px;
+          margin-top: 0.5rem;
+        }
       }
     }
-
     .mobileMenuOverlay {
-      // position: fixed;
       position: absolute;
       top: 20%;
       left: 30%;
@@ -153,7 +162,6 @@
         z-index: 2;
         top: 100px;
         width: 450px;
-        // height: 160px;
         object-fit: cover;
         border-radius: 50%;
       }
@@ -165,7 +173,6 @@
       align-items: center;
       height: auto;
       width: 100%;
-      // padding: 1rem;
       z-index: 1;
 
       .containerText {
@@ -173,21 +180,12 @@
         margin-top: 1rem;
 
         .logoMain {
-          position: fixed;
-          top: 30px;
-          left: 30px;
-          width: 75px;
-          height: 75px;
-        }
-
-        .name {
-          font-size: 40px;
-          margin-top: 1rem;
-        }
-
-        .jobTitle {
-          font-size: 30px;
-          margin-top: 0.5rem;
+          display: none;
+          // position: fixed;
+          // top: 30px;
+          // left: 30px;
+          // width: 75px;
+          // height: 75px;
         }
 
         .socials {

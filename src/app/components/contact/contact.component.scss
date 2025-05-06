@@ -54,6 +54,10 @@
   margin-bottom: 50px;
 }
 
+.contentMiddle {
+  display: none;
+}
+
 .contentDown {
   display: flex;
   justify-content: center;
@@ -69,15 +73,18 @@
 }
 
 .contactDescription {
-  display: flex;
-  justify-content: flex-start;
-  width: 429px;
-  height: 124px;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 18px;
+  word-break: break-word;
   font-family: Josefin Sans;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
-  text-align: justify;
+  word-break: break-word;
+  text-align: left;
 }
 
 .contactInfo {

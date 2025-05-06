@@ -9,9 +9,10 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
+  background-color: rgba(137, 188, 217, 1);
 }
 
-.footer {
+.mainFooter {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -77,3 +78,12 @@
     }
   }
 }
+
+.responsiveFooterWrapper{
+  display: none;
+}
+
+.responsiveFooter{
+  display: none;
+}
+@import "footer.component.media-queries.scss";

@@ -20,7 +20,7 @@ export class SkillsComponent {
     { name: 'Firebase', image: 'assets/img/skills/Firebase.svg' },
     { name: 'Scrum', image: 'assets/img/skills/scrum.svg' },
     { name: 'Typescript', image: 'assets/img/skills/TypeScript.svg' },
-    { name: 'Material Design', image: 'assets/img/skills/material-design.svg' },
+    { name: 'Material Design', image: 'assets/img/skills/material-design.svg' }
   ];
 
   frontendSkills: string[] = [];

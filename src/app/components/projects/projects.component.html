@@ -7,7 +7,38 @@
         {{ project.titleKey | translate }}
       </button>
     </div>
-    <div class="projectCard" *ngIf="projects[activeProjectIndex] as project">
+    <div class="responsiveProjectTabs">
+      <button *ngFor="let responsiveProject of responsiveProject; let i = index" (click)="setActiveProject(i)"
+        [class.active]="i === activeProjectIndex">
+        {{ responsiveProject.projectTitleKey | translate }}
+      </button>
+    </div>
+    <div class="projectCard" [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }"
+      *ngIf="projects[activeProjectIndex] as project">
+      <div class="responsiveContent">
+        <h2>{{ project.titleKeyWO | translate }}</h2>
+        <p class="responsiveUsedSkills">
+          {{ project.usedSkillHeadline | translate }}:
+          <span *ngFor="let skill of project.usedSkillNameKeys; let last = last">
+            {{ skill | translate }}<span *ngIf="!last">, </span>
+          </span>
+        </p>
+        <p class="responsiveDuration">{{ project.duration | translate }}</p>
+        <div class="responsiveProjectImageWrapper">
+          <img [src]="project.image" class="responsiveProjectImage" [alt]="project.titleKey | translate" />
+        </div>
+        <ng-container *ngFor="let headlineKey of project.descriptionHeadlineKeys; let i = index">
+          <h3> <img class="miniShape" src="assets/img/otherSpecs/miniShape.svg" alt="" /> {{ headlineKey | translate }}
+          </h3>
+          <p class="responsiveDescription">
+            {{ project.descriptionKeys[i] | translate }}
+          </p>
+        </ng-container>
+        <div class="responsiveProjectLinks">
+          <button class="live"><a *ngIf="project.link" [href]="project.link" target="_blank">Live Test</a></button>
+          <button class="github"><a *ngIf="project.repo" [href]="project.repo" target="_blank">GitHub</a></button>
+        </div>
+      </div>
       <div class="projectContentLeft">
         <div class="projectDescription">
           <ng-container *ngFor="let headlineKey of project.descriptionHeadlineKeys; let i = index">

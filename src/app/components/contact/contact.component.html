@@ -19,6 +19,9 @@
         </div>
       </div>
     </div>
+    <div class="contentMiddle">
+      <p>{{ 'CONTACT.LETSTALK' | translate }}</p>
+    </div>
     <div class="contentDown">
       <form (ngSubmit)="onSubmit()" class="contactForm" #contactForm="ngForm">
         <div class="nameAndEmail">
@@ -60,6 +63,9 @@
           </button>
         </div>
       </form>
+    </div>
+    <div class="responsiveScrollTopButtonContainer">
+      <button class="responsiveScrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
     </div>
   </div>
 </section>
