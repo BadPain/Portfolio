@@ -215,4 +215,12 @@ export class AboutmeComponent {
       this.deleting ? 40 : 80
     );
   }
+
+  scrollToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

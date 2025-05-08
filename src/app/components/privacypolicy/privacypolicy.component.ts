@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -10,6 +11,11 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
   template: `
     <section class="privacy-policy privacy-mode">
       <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
+      <div class="back-button-wrapper">
+        <button class="back-button" (click)="goBack()">
+          {{ 'PRIVACY.BACK' | translate }}
+        </button>
+      </div>
       <p>
         <strong>{{ 'PRIVACY.LAST_UPDATED' | translate }}</strong>
       </p>
@@ -75,5 +81,10 @@ export class PrivacyPolicyComponent {
   }
   ngOnDestroy(): void {
     document.body.classList.remove('privacy-mode');
+  }
+  constructor(private router: Router) {}
+
+  goBack() {
+    this.router.navigate(['https://www.irving-webdev.de/portfolio/browser/']);
   }
 }

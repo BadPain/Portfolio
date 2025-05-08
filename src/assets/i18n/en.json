@@ -44,23 +44,27 @@
       "PROJECTTHREE": "3. Project",
       "PROJECTFOUR": "4. Project"
     },
+    "PLACEHOLDER": {
+      "LIVE": "Wait...",
+      "REPO": "Upload..."
+    },
     "TITLE": "My Projects",
     "PROJECTONE": {
-      "TITLE": "1. Portfolio Website",
-      "TITLEWO": "Portfolio Website",
-      "DURATION": "Duration: 2 Weeks",
+      "TITLE": "1. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Duration: 5 Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
-          "TEXT": "My personal portfolio website was developed using Angular and includes modern animations as well as full multilingual support (i18n) to best address an international audience."
+          "TEXT": "Join is a web-based Kanban team board that I developed together with my group. It enables the visual organization of tasks, the setting of priorities and efficient team collaboration - inspired by tools such as Trello."
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "How I organized my workflow",
-          "TEXT": "My personal web business card was built with Angular and, thanks to integrated multilingual support, offers an optimal layout and user experience for an international audience."
+          "TEXT": "I have divided my tasks into clear sub-areas: Planning, implementation and testing. With the help of Kanban lists, branch workflows and regular code reviews, I was able to work in a structured and focused way - even in stressful phases."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "New experience through Angular",
-          "TEXT": "Through working with Angular, I gained in-depth experience in modern web development, component structure, data binding, routing, and handling multilingual content."
+          "TEXT": "Working in a team was very rewarding. I learned to take responsibility, maintain clear communication and react flexibly to challenges. The mutual exchange was particularly important - both technically and organizationally."
         }
       },
       "SKILLHEADLINE": "Technologies",
@@ -98,21 +102,21 @@
       "SKILLTHREEENAME": "CSS"
     },
     "PROJECTTHREE": {
-      "TITLE": "3. Join",
-      "TITLEWO": "Join",
-      "DURATION": "Duration: 5 Weeks",
+      "TITLE": "Comming Soon",
+      "TITLEWO": "Comming soon",
+      "DURATION": "Duration: X Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
-          "TEXT": "TO BE EDITED"
+          "TEXT": "We are currently working flat out on our new project. Stay tuned - it's worth it!"
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "How I organized my workflow",
-          "TEXT": "TO BE EDITED2"
+          "TEXT": "Subscribe to our newsletter to make sure you don't miss the launch."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "My experience with teamwork",
-          "TEXT": "TO BE EDITED3"
+          "TEXT": "Thank you for your patience and interest."
         }
       },
       "SKILLHEADLINE": "Technologies",
@@ -124,21 +128,21 @@
       "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTFOUR": {
-      "TITLE": "4. Discord Bot",
-      "TITLEWO": "Discord Bot",
-      "DURATION": "Duration: 2 Weeks",
+      "TITLE": "Comming Soon",
+      "TITLEWO": "Comming Soon",
+      "DURATION": "Duration: X Weeks",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "About this project",
-          "TEXT": "I developed a Discord bot with custom commands and extensive logging, and successfully hosted and managed it on my own Linux server."
+          "TEXT": "We are fine-tuning the final details so that we can soon offer you a great experience."
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "How I organized my workflow",
-          "TEXT": "During this project, I gained extensive experience in bot development and successfully set up a Ubuntu server to manage and run the bot."
+          "TEXT": "Check back soon or subscribe to our newsletter to stay up to date."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "My experience with teamwork",
-          "TEXT": "I learned to develop effective problem-solving strategies, to analyze and understand foreign code, and to successfully continue its development."
+          "TEXT": "We look forward to welcoming you soon!"
         }
       },
       "SKILLHEADLINE": "Technologies",
@@ -168,9 +172,9 @@
     "ERROR_MESSAGE_REQUIRED": "Please enter a message.",
     "ERROR_MESSAGE_MINLENGTH": "At least 25 characters required.",
     "ERROR_MESSAGE_MAXLENGTH": "At most 500 characters required.",
-    "ERROR_PRIVACY": "Please confirm data protection.",
-    "ERROR_SEND": "An error occurred while sending. Please try again later.",
-    "SUCCESS_SEND": "Thank you, your message was successfully sent."
+    "SUCCESS": "Thank you for your message!",
+    "ERROR": "An error occurred. Please try again later.",
+    "ERROR_PRIVACY": "Please accept the privacy policy."
   },
   "FOOTER": {
     "COPYRIGHT": "©  Florian Irving {{year}}",
@@ -212,6 +216,7 @@
     "RIGHTS_CONTACT": "To exercise your rights, please contact:",
     "REVOCATION_TEXT": "You can revoke your consent at any time by emailing",
     "SECURITY_TEXT": "This website uses HTTPS encryption. Your data is securely transmitted when submitting the contact form.",
-    "HOSTING_TEXT": "The website is hosted on a private server in Germany and is exclusively managed by Florian Irving."
+    "HOSTING_TEXT": "The website is hosted on a private server in Germany and is exclusively managed by Florian Irving.",
+    "BACK": "Back to homepage"
   }
 }

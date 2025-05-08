@@ -52,7 +52,7 @@
   }
 }
 
-.responsiveProjectTabs{
+.responsiveProjectTabs {
   display: none;
 }
 
@@ -70,6 +70,15 @@
   gap: 3rem;
   align-items: flex-start;
   text-align: left;
+
+  .placeholder-link {
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-style: italic;
+    cursor: default;
+    text-decoration: none;
+  }
 
   .responsiveContent {
     display: none;

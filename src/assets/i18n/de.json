@@ -44,32 +44,36 @@
       "PROJECTTHREE": "3. Projekt",
       "PROJECTFOUR": "4. Projekt"
     },
+    "PLACEHOLDER": {
+      "LIVE": "Warte...",
+      "REPO": "Upload..."
+    },
     "TITLE": "Meine Projekte",
     "PROJECTONE": {
-      "TITLE": "1. Portfolio Website",
-      "TITLEWO": "Portfolio Website",
-      "DURATION": "Dauer: 2 Wochen",
+      "TITLE": "1. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Dauer: 4 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
-          "TEXT": "Meine persönliche Portfolio-Website wurde mit Angular entwickelt und beinhaltet moderne Animationen sowie eine vollständige Mehrsprachigkeitsunterstützung (i18n), um internationale Besucher bestmöglich anzusprechen."
+          "TEXT": "Join ist ein webbasiertes Kanban-Teamboard, das ich gemeinsam mit meiner Gruppe entwickelt habe. Es ermöglicht die visuelle Organisation von Aufgaben, das Setzen von Prioritäten und eine effiziente Zusammenarbeit im Team – inspiriert von Tools wie Trello."
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
-          "TEXT": "Meine persönliche Web-Visitenkarte wurde mit Angular entwickelt und bietet dank integrierter Mehrsprachigkeit eine optimale Darstellung und Benutzerfreundlichkeit für ein internationales Publikum."
+          "TEXT": "Ich habe meine Aufgaben in klare Teilbereiche aufgeteilt: Planung, Umsetzung und Testing. Mit Hilfe von Kanban-Listen, Branch-Workflows und regelmäßigen Code-Reviews konnte ich strukturiert und fokussiert arbeiten – auch in stressigen Phasen."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "Neue Erfahrung durch Angular",
-          "TEXT": "Durch die Arbeit mit Angular habe ich moderne Webentwicklung, Komponentenstruktur, Datenbindung, Routing und den Umgang mit Mehrsprachigkeit intensiv gelernt."
+          "TEXT": "Die Zusammenarbeit im Team war sehr bereichernd. Ich habe gelernt, Verantwortung zu übernehmen, klare Kommunikation zu pflegen und flexibel auf Herausforderungen zu reagieren. Besonders wichtig war der gegenseitige Austausch – sowohl technisch als auch organisatorisch."
         }
       },
       "SKILLHEADLINE": "Technologien",
-      "SKILLONE": "assets/img/skills/Angular.svg",
-      "SKILLONENAME": "Angular",
-      "SKILLTWO": "assets/img/skills/Css.svg",
-      "SKILLTWOENAME": "CSS",
-      "SKILLTHREE": "assets/img/skills/i18next.png",
-      "SKILLTHREEENAME": "i18next"
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTTWO": {
       "TITLE": "2. 2D Game Engine",
@@ -98,21 +102,21 @@
       "SKILLTHREEENAME": "CSS"
     },
     "PROJECTTHREE": {
-      "TITLE": "3. Join",
-      "TITLEWO": "Join",
-      "DURATION": "Dauer: 5 Woche",
+      "TITLE": "Bald verfügbar",
+      "TITLEWO": "Bald verfügbar",
+      "DURATION": "Dauer: X Woche",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
-          "TEXT": "Join ist ein webbasiertes Kanban-Teamboard, das ich gemeinsam mit meiner Gruppe entwickelt habe. Es ermöglicht die visuelle Organisation von Aufgaben, das Setzen von Prioritäten und eine effiziente Zusammenarbeit im Team – inspiriert von Tools wie Trello."
+          "TEXT": "Wir arbeiten aktuell mit Hochdruck an unserem neuen Projekt. Bleiben Sie dran – es lohnt sich!"
         },
         "DESCRIPTIONTWO": {
-          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
-          "TEXT": "Ich habe meine Aufgaben in klare Teilbereiche aufgeteilt: Planung, Umsetzung und Testing. Mit Hilfe von Kanban-Listen, Branch-Workflows und regelmäßigen Code-Reviews konnte ich strukturiert und fokussiert arbeiten – auch in stressigen Phasen."
+          "HEADLINE": "Info-Bereich",
+          "TEXT": "Tragen Sie sich gerne in unseren Newsletter ein, um den Start nicht zu verpassen."
         },
         "DESCRIPTIONTHREE": {
-          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
-          "TEXT": "Die Zusammenarbeit im Team war sehr bereichernd. Ich habe gelernt, Verantwortung zu übernehmen, klare Kommunikation zu pflegen und flexibel auf Herausforderungen zu reagieren. Besonders wichtig war der gegenseitige Austausch – sowohl technisch als auch organisatorisch."
+          "HEADLINE": "Danke",
+          "TEXT": "Vielen Dank für Ihre Geduld und Ihr Interesse."
         }
       },
       "SKILLHEADLINE": "Technologien",
@@ -124,21 +128,21 @@
       "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTFOUR": {
-      "TITLE": "4. Discord Bot",
-      "TITLEWO": "Discord Bot",
-      "DURATION": "Dauer: 2 Wochen",
+      "TITLE": "In Kürze online",
+      "TITLEWO": "In Kürze online",
+      "DURATION": "Dauer: X Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
           "HEADLINE": "Über dieses Projekt",
-          "TEXT": "Ich habe einen Discord-Bot mit individuellen Kommandos und umfangreichem Logging programmiert und erfolgreich auf meinem eigenen Linux-Server gehostet und verwaltet."
+          "TEXT": "Wir feilen an den letzten Details, um Ihnen bald ein großartiges Erlebnis bieten zu können."
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
-          "TEXT": "Während dieses Projekts habe ich umfassende Erfahrung in der Bot-Programmierung gesammelt und erfolgreich einen Ubuntu-Server zur Verwaltung und Ausführung des Bots eingerichtet."
+          "TEXT": "Schauen Sie bald wieder vorbei oder abonnieren Sie unseren Newsletter, um auf dem Laufenden zu bleiben."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
-          "TEXT": "Ich habe gelernt, effektive Problemlösungsstrategien zu entwickeln sowie fremden Code zu analysieren, zu verstehen und erfolgreich weiterzuentwickeln."
+          "TEXT": "Wir freuen uns darauf, Sie bald begrüßen zu dürfen!"
         }
       },
       "SKILLHEADLINE": "Technologien",
@@ -169,8 +173,8 @@
     "ERROR_MESSAGE_MINLENGTH": "Mindestens 25 Zeichen nötig.",
     "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen nötig.",
     "ERROR_PRIVACY": "Datenschutz bitte bestätigen.",
-    "ERROR_SEND": "Fehler beim Senden. Bitte versuche es später erneut.",
-    "SUCCESS_SEND": "Vielen Dank, Ihre Nachricht wurde erfolgreich versendet."
+    "SUCCESS": "Danke für deine Nachricht!",
+    "ERROR": "Fehler beim Senden. Bitte versuche es später erneut."
   },
   "FOOTER": {
     "COPYRIGHT": "©  Florian Irving {{year}}",
@@ -212,6 +216,7 @@
     "RIGHTS_CONTACT": "Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:",
     "REVOCATION_TEXT": "Sie können Ihre Einwilligung jederzeit widerrufen. Senden Sie dazu eine E-Mail an",
     "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Ihre Daten werden beim Absenden des Kontaktformulars sicher übertragen.",
-    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Florian Irving verwaltet."
+    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Florian Irving verwaltet.",
+    "BACK": "Zurück zur Startseite"
   }
 }

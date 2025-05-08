@@ -20,13 +20,13 @@ export class IntroComponent {
 
   /**
    * Sets the active link to the provided link.
-   * 
+   *
    * @param link - The link string to set as active.
    */
   setActive(link: string) {
     this.activeLink = link;
   }
-  
+
   isHovered: boolean = false;
   isHoveredMail: boolean = false;
   isHoveredLinkedin: boolean = false;
@@ -34,4 +34,16 @@ export class IntroComponent {
   isMenuOpen: boolean = false;
 
   constructor() {}
+
+  handleNavClick(target: string, event: Event) {
+    event.preventDefault();
+    this.setActive(target);
+    this.isMenuOpen = false;
+
+    setTimeout(() => {
+      document
+        .querySelector(`#${target}`)
+        ?.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  }
 }

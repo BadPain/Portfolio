@@ -43,6 +43,28 @@
   }
 }
 
+.back-button-wrapper {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(38, 46, 52);
+}
+
+.back-button {
+  padding: 5px 20px;
+  background-color: rgb(137, 188, 255);
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(112, 168, 240);
+  }
+}
+
 @media (max-width: 450px) {
   :host {
     padding: 0.5rem;

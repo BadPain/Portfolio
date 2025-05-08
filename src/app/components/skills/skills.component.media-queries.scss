@@ -54,7 +54,7 @@
     .shapeWrapperSkills {
       display: none;
     }
-    .responsiveShape{
+    .responsiveShape {
       display: block;
     }
     .learningNow {
@@ -126,5 +126,48 @@
     .skillsTitle {
       font-size: 40px;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .learningIcons {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .learningIcons {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .learningIcons {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .learningIcons {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 371px) {
+  .learningIcons {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 355px) {
+  .learningIcons {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 330px) {
+  .learningIcons {
+    margin-bottom: 120px;
   }
 }

@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule} from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    TranslateModule,
+    RouterModule
+  ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
@@ -18,9 +24,14 @@ export class ContactComponent {
   message: string = '';
   privacyAccepted: boolean = false;
 
+  showOverlay: boolean = false;
+  overlayMessage: string = '';
+
+  constructor(private http: HttpClient, private translate: TranslateService) {}
+
   onSubmit() {
     if (!this.privacyAccepted) {
-      alert('Bitte bestätige die Datenschutzbestimmungen.');
+      this.triggerOverlay(this.translate.instant('CONTACT.ERROR_PRIVACY'));
       return;
     }
 
@@ -32,27 +43,25 @@ export class ContactComponent {
 
     this.http.post('/portfolio/kontakt.php', payload).subscribe({
       next: () => {
-        alert('Danke für deine Nachricht!');
+        this.triggerOverlay(this.translate.instant('CONTACT.SUCCESS'));
         this.name = '';
         this.email = '';
         this.message = '';
         this.privacyAccepted = false;
       },
       error: () => {
-        alert('Fehler beim Senden. Bitte versuche es später erneut.');
+        this.triggerOverlay(this.translate.instant('CONTACT.ERROR'));
       },
     });
   }
 
-  /**
-   * Smoothly scrolls to the top of the page.
-   */
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+  triggerOverlay(message: string) {
+    this.overlayMessage = message;
+    this.showOverlay = true;
+    setTimeout(() => (this.showOverlay = false), 3000);
   }
 
-  constructor(private http: HttpClient) {}
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -47,7 +47,7 @@ export class ProjectsComponent {
       titleKey: 'PROJECTS.PROJECTONE.TITLE',
       titleKeyWO: 'PROJECTS.PROJECTONE.TITLEWO',
       duration: 'PROJECTS.PROJECTONE.DURATION',
-      image: 'assets/img/projects/Portfolio.png',
+      image: 'assets/img/projects/Join.png',
       descriptionHeadlineKeys: [
         'PROJECTS.PROJECTONE.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
         'PROJECTS.PROJECTONE.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
@@ -69,8 +69,8 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTONE.SKILLTWOENAME',
         'PROJECTS.PROJECTONE.SKILLTHREEENAME',
       ],
-      link: 'https://www.irving-webdev.de/portfolio/browser/',
-      repo: 'https://github.com/BadPain/Portfolio',
+      link: 'https://www.irving-webdev.de/projects/Join/html/login.html',
+      repo: 'https://github.com/BadPain/join',
     },
     {
       titleKey: 'PROJECTS.PROJECTTWO.TITLE',
@@ -105,7 +105,7 @@ export class ProjectsComponent {
       titleKey: 'PROJECTS.PROJECTTHREE.TITLE',
       titleKeyWO: 'PROJECTS.PROJECTTHREE.TITLEWO',
       duration: 'PROJECTS.PROJECTTHREE.DURATION',
-      image: 'assets/img/projects/Join.png',
+      image: 'assets/img/projects/comingsoon.jpg',
       descriptionHeadlineKeys: [
         'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
         'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
@@ -127,14 +127,14 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTTHREE.SKILLTWOENAME',
         'PROJECTS.PROJECTTHREE.SKILLTHREEENAME',
       ],
-      link: 'https://www.irving-webdev.de/projects/Join/html/login.html',
-      repo: 'https://github.com/BadPain/join',
+      link: '',
+      repo: '',
     },
     {
       titleKey: 'PROJECTS.PROJECTFOUR.TITLE',
       titleKeyWO: 'PROJECTS.PROJECTFOUR.TITLEWO',
       duration: 'PROJECTS.PROJECTFOUR.DURATION',
-      image: 'assets/img/projects/DiscordBot.png',
+      image: 'assets/img/projects/comingsoon.jpg',
       descriptionHeadlineKeys: [
         'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
         'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
@@ -156,8 +156,8 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTFOUR.SKILLTWOENAME',
         'PROJECTS.PROJECTFOUR.SKILLTHREEENAME',
       ],
-      link: 'https://github.com/BadPain/Bot',
-      repo: 'https://github.com/BadPain/Bot',
+      link: '',
+      repo: '',
     },
   ];
 

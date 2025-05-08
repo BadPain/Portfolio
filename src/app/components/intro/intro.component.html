@@ -13,13 +13,18 @@
     </div>
     <div class="mobileMenuOverlay" *ngIf="isMenuOpen">
         <nav class="mobileNav">
-            <a href="#aboutMe" [ngClass]="{'active': activeLink === 'aboutMe'}" (click)="setActive('aboutMe')">{{
-                'NAV.ABOUTME' | translate }}</a>
-            <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActive('skills')">{{
+            <a href="#aboutMe" [ngClass]="{ 'active': activeLink === 'aboutMe' }"
+                (click)="handleNavClick('aboutMe', $event)">
+                {{ 'NAV.ABOUTME' | translate }}
+            </a>
+            <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}"
+                (click)="handleNavClick('skills', $event)">{{
                 'NAV.SKILLS' | translate }}</a>
-            <a href="#projects" [ngClass]="{'active': activeLink === 'projects'}" (click)="setActive('projects')">{{
+            <a href="#projects" [ngClass]="{'active': activeLink === 'projects'}"
+                (click)="handleNavClick('projects', $event)">{{
                 'NAV.PROJECTS' | translate }}</a>
-            <a href="#contact" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')">{{
+            <a href="#contact" [ngClass]="{'active': activeLink === 'contact'}"
+                (click)="handleNavClick('contact', $event)">{{
                 'NAV.CONTACT' | translate }}</a>
             <div class="langSwitch">
                 <app-language-switcher></app-language-switcher>
@@ -50,8 +55,9 @@
                         <img [src]="isHoveredMail ? 'assets/img/otherSpecs/mailHover.svg' : 'assets/img/otherSpecs/mail.svg'"
                             width="30" height="30" alt="Mail Logo" />
                     </a>
-                    <a href="https://www.linkedin.com/in/florian-irving/" target="_blank" rel="noopener noreferrer"
-                        (mouseenter)="isHoveredLinkedin = true" (mouseleave)="isHoveredLinkedin = false">
+                    <a href="https://www.linkedin.com/in/florian-irving-6174572a2/" target="_blank"
+                        rel="noopener noreferrer" (mouseenter)="isHoveredLinkedin = true"
+                        (mouseleave)="isHoveredLinkedin = false">
                         <img [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/linkedinHover.svg' : 'assets/img/otherSpecs/linkedin.svg'"
                             width="30" height="30" alt="LinkedIn Logo" />
                     </a>
