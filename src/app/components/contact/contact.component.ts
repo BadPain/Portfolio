@@ -1,20 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TranslateModule} from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    TranslateModule,
-    RouterModule
-  ],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
@@ -29,7 +25,7 @@ export class ContactComponent {
 
   constructor(private http: HttpClient, private translate: TranslateService) {}
 
-  onSubmit() {
+  onSubmit(form: NgForm) {
     if (!this.privacyAccepted) {
       this.triggerOverlay(this.translate.instant('CONTACT.ERROR_PRIVACY'));
       return;
@@ -44,10 +40,7 @@ export class ContactComponent {
     this.http.post('/portfolio/kontakt.php', payload).subscribe({
       next: () => {
         this.triggerOverlay(this.translate.instant('CONTACT.SUCCESS'));
-        this.name = '';
-        this.email = '';
-        this.message = '';
-        this.privacyAccepted = false;
+        form.resetForm();
       },
       error: () => {
         this.triggerOverlay(this.translate.instant('CONTACT.ERROR'));

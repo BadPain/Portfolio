@@ -46,6 +46,7 @@
       object-fit: cover;
       object-position: bottom;
       z-index: 3;
+      transition: opacity 0.3s ease;
     }
 
     .shapeOne,
@@ -171,6 +172,12 @@
 
 .mobileMenuOverlay {
   display: none;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 @import "./intro.component.media-queries";

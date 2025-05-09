@@ -36,14 +36,18 @@
           </p>
         </ng-container>
         <div class="responsiveProjectLinks">
-          <button class="live">
-            <a *ngIf="project.link; else noLive" [href]="project.link" target="_blank">Live Test</a>
-            <ng-template #noLive><span class="placeholder-link">Kommt bald</span></ng-template>
-          </button>
-          <button class="github">
-            <a *ngIf="project.repo; else noRepo" [href]="project.repo" target="_blank">GitHub</a>
-            <ng-template #noRepo><span class="placeholder-link">Noch nicht verfügbar</span></ng-template>
-          </button>
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" class="buttonStyle live">
+            Live Test
+          </a>
+          <ng-template #noLiveRight>
+            <span class="buttonStyle placeholder">Kommt bald</span>
+          </ng-template>
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" class="buttonStyle github">
+            GitHub
+          </a>
+          <ng-template #noRepoRight>
+            <span class="buttonStyle placeholder">Noch nicht verfügbar</span>
+          </ng-template>
         </div>
       </div>
       <div class="projectContentLeft">
@@ -65,14 +69,18 @@
         </div>
         <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" />
         <div class="projectLinks">
-          <button class="live">
-            <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank">Live Test</a>
-            <ng-template #noLiveRight><span class="placeholder-link">Kommt bald</span></ng-template>
-          </button>
-          <button class="github">
-            <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank">GitHub</a>
-            <ng-template #noRepoRight><span class="placeholder-link">Noch nicht verfügbar</span></ng-template>
-          </button>
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" class="buttonStyle live">
+            Live Test
+          </a>
+          <ng-template #noLiveRight>
+            <span class="placeholder-link fullButton">Kommt bald</span>
+          </ng-template>
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" class="buttonStyle github">
+            GitHub
+          </a>
+          <ng-template #noRepoRight>
+            <span class="placeholder-link fullButton">Noch nicht verfügbar</span>
+          </ng-template>
         </div>
       </div>
     </div>

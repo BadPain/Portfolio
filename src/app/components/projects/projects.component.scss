@@ -155,66 +155,51 @@
   .projectLinks {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     gap: 1rem;
+    flex-wrap: wrap;
 
-    .live {
+    .buttonStyle {
       display: flex;
       justify-content: center;
-      width: 132px;
+      align-items: center;
+      min-width: 132px;
       height: 48px;
-      padding-top: 13px;
-      padding-right: 30px;
-      padding-bottom: 13px;
-      padding-left: 30px;
-      gap: 10px;
+      padding: 12px 24px;
       border-radius: 30px;
-      background-color: rgba(137, 188, 217, 1);
-      border: none;
+      font-family: Josefin Sans;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
       cursor: pointer;
+      border: none;
+    }
+
+    .live {
+      background-color: rgba(137, 188, 217, 1);
+      color: #000;
 
       &:hover {
         background-color: rgba(248, 245, 236, 1);
       }
-
-      a {
-        font-family: Josefin Sans;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 120%;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-      }
     }
 
     .github {
-      display: flex;
-      justify-content: center;
-      width: 132px;
-      height: 48px;
-      padding-top: 13px;
-      padding-right: 30px;
-      padding-bottom: 13px;
-      padding-left: 30px;
-      gap: 10px;
-      border-radius: 30px;
-      border-style: solid;
-      border-color: rgba(137, 188, 217, 1);
       background-color: rgba(137, 188, 217, 0.07);
-      cursor: pointer;
+      border: 1px solid rgba(137, 188, 217, 1);
+      color: rgba(137, 188, 217, 1);
 
       &:hover {
         background-color: rgb(92, 104, 114);
+        color: white;
       }
+    }
 
-      a {
-        font-family: Josefin Sans;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 120%;
-        color: rgb(137, 188, 217);
-        text-decoration: none;
-      }
+    .placeholder {
+      background-color: #aaa;
+      color: #fff;
+      opacity: 0.6;
+      pointer-events: none;
     }
   }
 }

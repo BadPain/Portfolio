@@ -23,7 +23,7 @@
       <p>{{ 'CONTACT.LETSTALK' | translate }}</p>
     </div>
     <div class="contentDown">
-      <form (ngSubmit)="onSubmit()" class="contactForm" #contactForm="ngForm">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contactForm">
         <div class="nameAndEmail">
           <label class="name" [class.label-error]="nameInput.invalid && nameInput.touched">
             {{

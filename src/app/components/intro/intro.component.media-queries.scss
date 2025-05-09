@@ -82,7 +82,6 @@
     .mobileMenuOverlay {
       position: absolute;
       top: 25%;
-      transform: translate(-50%, -50%);
       z-index: 1;
       width: 313px;
       height: 326px;
@@ -203,6 +202,48 @@
         margin-top: 2rem;
         display: flex;
         justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .intro {
+    .mobileMenuOverlay {
+      transform: scale(1.2, 1.2);
+      background-size: contain;
+      padding: 0;
+    }
+
+    .mobileMenuOverlay .mobileNav {
+      font-size: 18px;
+      gap: 0.75rem;
+
+      a {
+        font-size: 18px;
+      }
+
+      .langSwitch {
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    .left {
+      padding: 0;
+    }
+    .right {
+      justify-content: flex-start;
+      .containerText {
+        .logoAndSocials {
+          padding-top: 25px;
+        }
       }
     }
   }

@@ -1,9 +1,6 @@
 @media (max-width: 1200px) {
   .projectTabs {
     padding-left: 0px;
-    button {
-      font-size: 24px;
-    }
   }
 }
 @media (max-width: 1150px) {
@@ -27,20 +24,12 @@
 @media (max-width: 1100px) {
   .projectTabs {
     padding-left: 0px;
-    button {
-      min-width: 200px;
-      font-size: 20px;
-    }
   }
 }
 
 @media (max-width: 1051px) {
   .projectTabs {
     padding-left: 0px;
-    button {
-      min-width: 200px;
-      font-size: 20px;
-    }
   }
 
   .projectCard {
@@ -59,15 +48,6 @@
 @media (max-width: 950px) {
   .projectTabs {
     gap: 0;
-    button {
-      min-width: 200px;
-      min-height: 50px;
-      font-size: 20px;
-      &.active {
-        min-width: 200px;
-        min-height: 60px;
-      }
-    }
   }
 
   .projectCard {
@@ -101,32 +81,6 @@
     gap: 0;
     padding-left: 0;
     width: 100%;
-
-    button {
-      flex: 1 1 25%;
-      font-family: Josefin Sans;
-      line-height: 120%;
-      min-height: 50px;
-      font-size: 20px;
-      background: transparent;
-      border: none;
-      color: #89bcff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px 20px 0 0;
-      cursor: pointer;
-      font-weight: 500;
-
-      &.active {
-        min-width: 100px;
-        min-height: 60px;
-        background: rgba(137, 188, 217, 0.07);
-        color: rgba(248, 245, 236, 1);
-      }
-
-      &:hover {
-        color: rgba(248, 245, 236, 1);
-      }
-    }
   }
   .projectCard {
     border-radius: 0 40px 0 0;
@@ -198,54 +152,48 @@
         gap: 1rem;
         margin-top: 30px;
 
-        .live {
+        .buttonStyle {
           display: flex;
           justify-content: center;
-          width: 132px;
+          align-items: center;
+          min-width: 132px;
           height: 48px;
-          padding: 13px 30px;
-          gap: 10px;
+          padding: 12px 24px;
           border-radius: 30px;
-          background-color: rgba(137, 188, 217, 1);
+          font-family: Josefin Sans;
+          font-size: 18px;
+          text-align: center;
+          text-decoration: none;
+          transition: background-color 0.3s ease, color 0.3s ease;
+          cursor: pointer;
           border: none;
+        }
+
+        .live {
+          background-color: rgba(137, 188, 217, 1);
+          color: #000;
 
           &:hover {
             background-color: rgba(248, 245, 236, 1);
           }
-
-          a {
-            font-family: Josefin Sans;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 120%;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-          }
         }
 
         .github {
-          display: flex;
-          justify-content: center;
-          width: 132px;
-          height: 48px;
-          padding: 13px 30px;
-          gap: 10px;
-          border-radius: 30px;
-          border-style: solid;
-          border-color: rgba(137, 188, 217, 1);
           background-color: rgba(137, 188, 217, 0.07);
+          border: 1px solid rgba(137, 188, 217, 1);
+          color: rgba(137, 188, 217, 1);
 
           &:hover {
             background-color: rgb(92, 104, 114);
+            color: white;
           }
+        }
 
-          a {
-            font-family: Josefin Sans;
-            font-size: 18px;
-            line-height: 120%;
-            color: rgb(137, 188, 217);
-            text-decoration: none;
-          }
+        .placeholder {
+          background-color: #aaa;
+          color: #fff;
+          opacity: 0.6;
+          pointer-events: none;
         }
       }
     }
@@ -268,33 +216,6 @@
     gap: 0;
     padding-left: 0;
     width: 100%;
-
-    button {
-      flex: 1 1 25%;
-      font-family: Josefin Sans;
-      line-height: 120%;
-
-      min-height: 50px;
-      font-size: 14px;
-      background: transparent;
-      border: none;
-      color: #89bcff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px 20px 0 0;
-      cursor: pointer;
-      font-weight: 500;
-
-      &.active {
-        min-width: 60px;
-        min-height: 60px;
-        background: rgba(137, 188, 217, 0.07);
-        color: rgba(248, 245, 236, 1);
-      }
-
-      &:hover {
-        color: rgba(248, 245, 236, 1);
-      }
-    }
   }
 }
 
@@ -309,18 +230,17 @@
     button {
       padding: 0;
       &.active {
-        
       }
     }
   }
-  .projectCard{
-    .responsiveContent{
-      .responsiveProjectLinks{
-        .live{
+  .projectCard {
+    .responsiveContent {
+      .responsiveProjectLinks {
+        .live {
           align-items: center;
           padding: 0;
         }
-        .github{
+        .github {
           align-items: center;
           padding: 0;
         }

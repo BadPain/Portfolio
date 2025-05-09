@@ -37,9 +37,9 @@
             <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="">
         </div>
         <div class="shapeWrapperTwo">
-            <img class="shapeThree" src="assets/img/otherSpecs/shape3.svg" alt="">
+            <img class="shapeThree" [class.hidden]="isMenuOpen" src="assets/img/otherSpecs/shape3.svg" alt="">
         </div>
-        <img class="profilePicture" src="assets/img/pictures/Ich_cutted.png" alt="">
+        <img class="profilePicture" [class.hidden]="isMenuOpen" src="assets/img/pictures/Ich_cutted.png" alt="">
     </section>
     <section class="right">
         <div class="containerText">

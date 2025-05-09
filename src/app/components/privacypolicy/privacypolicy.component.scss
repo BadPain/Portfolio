@@ -2,8 +2,32 @@
   margin: 0 auto;
   display: block;
   background-color: rgb(38, 46, 52);
-  padding: 2rem;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+app-footer {
+  margin-top: auto;
+}
+
+.privacyScrollWrapper {
+  max-height: calc(100vh - 214px);
+  overflow-y: auto;
+  padding-bottom: 1rem;
 }
 
 .privacy-policy {
@@ -12,7 +36,42 @@
   color: white;
   padding-left: 50px;
   padding-right: 50px;
-  text-align: left;
+  padding-bottom: 60px;
+  text-align: center;
+  margin: 0 auto;
+  .privacyHeader {
+    background-color: rgb(38, 46, 52);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(137, 188, 217, 0.3);
+    display: flex;
+    justify-content: center;
+
+    .privacyHeaderContent {
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logoLink {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+
+      img {
+        width: 40px;
+        height: auto;
+      }
+
+      .privacyName {
+        font-family: Anta;
+        color: rgb(137, 188, 255);
+        font-size: 18px;
+      }
+    }
+  }
   h1 {
     color: rgb(137, 188, 255);
     font-size: 40px;
@@ -65,11 +124,13 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   :host {
     padding: 0.5rem;
   }
   .privacy-policy {
+    padding-left: 20px;
+    padding-right: 20px;
     h1 {
       font-size: 30px;
     }
