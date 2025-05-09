@@ -140,6 +140,20 @@ app-footer {
       line-height: 1.6;
     }
   }
+  .back-button {
+    padding: 2px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .privacy-policy {
+    .privacyHeader {
+      .privacyHeaderContent {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 365px) {

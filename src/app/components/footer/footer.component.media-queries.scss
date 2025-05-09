@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .responsiveFooter {
     padding: 0;
     gap: 20px;
@@ -68,6 +68,12 @@
       width: 100%;
       max-width: 350px;
       gap: 10px;
+      .privacy {
+        font-size: 13px;
+      }
+      .copyright {
+        font-size: 14px;
+      }
     }
   }
 }
