@@ -1,6 +1,6 @@
-<section class="projectsSection" id="projects">
+<section class="projectsSection" id="projects-desktop">
   <div class="projectsWrapper">
-    <h1 class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
+    <h1 id="projects-mobile" class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
 
     <div class="projectTabs">
       <button *ngFor="let project of projects; let i = index" (click)="setActiveProject(i)"

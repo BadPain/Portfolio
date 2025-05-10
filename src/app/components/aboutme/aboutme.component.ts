@@ -216,11 +216,17 @@ export class AboutmeComponent {
     );
   }
 
+  /**
+   * Scrolls the page to the contact section.
+   *
+   * This method is called when the user clicks the "Let's talk" button in the
+   * about me section. It uses the `scrollIntoView` method to scroll the page
+   * to the contact section with a smooth animation.
+   */
   scrollToContact() {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
 }

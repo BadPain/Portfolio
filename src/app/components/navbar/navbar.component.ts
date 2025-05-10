@@ -20,7 +20,7 @@ export class NavbarComponent {
 
   /**
    * Sets the active link to the provided link.
-   * 
+   *
    * @param link - The link string to set as active.
    */
   setActive(link: string) {

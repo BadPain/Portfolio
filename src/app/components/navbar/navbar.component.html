@@ -2,19 +2,24 @@
     <section>
         <ul class="nav-links">
             <div class="logoMain">
-                <a href="https://www.irving-webdev.de/portfolio/browser/" target="_blank" rel="noopener noreferrer" class="logo">
+                <a href="https://www.irving-webdev.de/portfolio/browser/" target="_blank" rel="noopener noreferrer"
+                    class="logo">
                     <img src="./assets/img/logo/LogoIconBlack.svg" alt="Florian Irving Logo" />
                 </a>
                 <p class="nameSmall">F. Irving</p>
                 <p class="jobTitleSmall">developer</p>
             </div>
-            <li><a href="#aboutMe" [ngClass]="{'active': activeLink === 'aboutMe'}" (click)="setActive('aboutMe')">{{
+            <li><a href="#aboutMe-desktop" [ngClass]="{'active': activeLink === 'aboutMe'}"
+                    (click)="setActive('aboutMe')">{{
                     'NAV.ABOUTME' | translate }}</a></li>
-            <li><a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActive('skills')">{{
+            <li><a href="#skills-desktop" [ngClass]="{'active': activeLink === 'skills'}"
+                    (click)="setActive('skills')">{{
                     'NAV.SKILLS' | translate }}</a></li>
-            <li><a href="#projects" [ngClass]="{'active': activeLink === 'projects'}" (click)="setActive('projects')">{{
+            <li><a href="#projects-desktop" [ngClass]="{'active': activeLink === 'projects'}"
+                    (click)="setActive('projects')">{{
                     'NAV.PROJECTS' | translate }}</a></li>
-            <li><a href="#contact" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')">{{
+            <li><a href="#contact-desktop" [ngClass]="{'active': activeLink === 'contact'}"
+                    (click)="setActive('contact')">{{
                     'NAV.CONTACT' | translate }}</a></li>
             <app-language-switcher></app-language-switcher>
         </ul>
