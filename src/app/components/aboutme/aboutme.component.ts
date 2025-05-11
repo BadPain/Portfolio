@@ -219,12 +219,15 @@ export class AboutmeComponent {
   /**
    * Scrolls the page to the contact section.
    *
-   * This method is called when the user clicks the "Let's talk" button in the
-   * about me section. It uses the `scrollIntoView` method to scroll the page
-   * to the contact section with a smooth animation.
+   * Determines the target section based on the current window width,
+   * selecting the mobile or desktop version of the contact section.
+   * If the target section is found, the page scrolls smoothly to it.
    */
   scrollToContact() {
-    const contactSection = document.getElementById('contact');
+    const isMobile = window.innerWidth <= 850;
+    const targetId = `contact-${isMobile ? 'mobile' : 'desktop'}`;
+    const contactSection = document.getElementById(targetId);
+
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }

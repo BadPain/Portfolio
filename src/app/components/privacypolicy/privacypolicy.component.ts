@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 import { Router } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -13,21 +14,52 @@ import { FooterComponent } from '../footer/footer.component';
     TranslateModule,
     LanguageSwitcherComponent,
     FooterComponent,
+    NavbarComponent,
   ],
   template: `
     <div class="privacyScrollWrapper">
+        <nav class="navbar">
+          <section>
+            <ul class="nav-links">
+              <div class="logoMain">
+                <a
+                  href="https://www.irving-webdev.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="logo"
+                >
+                  <img
+                    src="./assets/img/logo/LogoIconBlack.svg"
+                    alt="Florian Irving Logo"
+                  />
+                </a>
+                <p class="nameSmall">F. Irving</p>
+                <p class="jobTitleSmall">developer</p>
+              </div>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  [ngClass]="{ active: activeLink === 'privacy-policy' }"
+                  (click)="scrollToSection('privacy-policy')"
+                >
+                  {{ 'PRIVACY.TITLE' | translate }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  [ngClass]="{ active: activeLink === 'impressum' }"
+                  (click)="scrollToSection('impressum')"
+                >
+                  {{ 'LEGAL.TITLE' | translate }}
+                </a>
+              </li>
+              <app-language-switcher></app-language-switcher>
+            </ul>
+          </section>
+        </nav>
+        <span id="privacy-policy" class="anchor-spacer"></span>
       <section class="privacy-policy privacy-mode">
-        <header class="privacyHeader">
-          <div class="privacyHeaderContent">
-            <a routerLink="/" class="logoLink">
-              <img src="assets/img/logo/LogoIcon.svg" alt="Logo" />
-              <span class="privacyName">F. Irving</span>
-            </a>
-            <button class="back-button" (click)="goBack()">
-              {{ 'PRIVACY.BACK' | translate }}
-            </button>
-          </div>
-        </header>
         <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
         <div class="back-button-wrapper"></div>
         <p>
@@ -40,7 +72,6 @@ import { FooterComponent } from '../footer/footer.component';
           E-Mail:
           <a href="mailto:mail@irving.contact">mail&#64;irving.contact</a>
         </p>
-        <app-language-switcher></app-language-switcher>
         <h2>{{ 'PRIVACY.SECTIONS.DATA_COLLECTION' | translate }}</h2>
         <p>{{ 'PRIVACY.DATA_COLLECTION_TEXT_1' | translate }}</p>
 
@@ -85,6 +116,27 @@ import { FooterComponent } from '../footer/footer.component';
 
         <h2>{{ 'PRIVACY.SECTIONS.HOSTING' | translate }}</h2>
         <p>{{ 'PRIVACY.HOSTING_TEXT' | translate }}</p>
+        <hr />
+        <span id="impressum" class="anchor-spacer"></span>
+        <h1>{{ 'LEGAL.TITLE' | translate }}</h1>
+
+        <h2>{{ 'LEGAL.OWNER' | translate }}</h2>
+        <p>
+          Florian Irving<br />
+          Leopoldstraße 2-8<br />
+          32051 Herford<br />
+          E-Mail:
+          <a href="mailto:mail@irving.contact">mail&#64;irving.contact</a><br />
+        </p>
+
+        <h2>{{ 'LEGAL.DISCLAIMER_TITLE' | translate }}</h2>
+        <p>{{ 'LEGAL.DISCLAIMER_TEXT' | translate }}</p>
+
+        <h2>{{ 'LEGAL.LINKS_TITLE' | translate }}</h2>
+        <p>{{ 'LEGAL.LINKS_TEXT' | translate }}</p>
+
+        <h2>{{ 'LEGAL.COPYRIGHT_TITLE' | translate }}</h2>
+        <p>{{ 'LEGAL.COPYRIGHT_TEXT' | translate }}</p>
       </section>
     </div>
     <app-footer></app-footer>
@@ -101,6 +153,24 @@ export class PrivacyPolicyComponent {
   constructor(private router: Router) {}
 
   goBack() {
-    this.router.navigate(['https://www.irving-webdev.de/portfolio/browser/']);
+    this.router.navigate(['https://www.irving-webdev.de']);
+  }
+
+  activeLink: String = '';
+
+  /**
+   * Sets the active link to the provided link.
+   *
+   * @param link - The link string to set as active.
+   */
+  setActive(link: string) {
+    this.activeLink = link;
+  }
+  scrollToSection(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      this.setActive(id); // falls du aktiven Link markieren willst
+    }
   }
 }

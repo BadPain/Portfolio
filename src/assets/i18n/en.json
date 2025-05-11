@@ -162,7 +162,7 @@
     "EMAIL": "Your Email",
     "MESSAGE": "Your Message",
     "PRIVACY_PART1": "I have read the",
-    "PRIVACY_PART2": "privacy policy",
+    "PRIVACY_PART2": "Legal Notes",
     "PRIVACY_PART3": "and consent to the processing of my data.",
     "SEND": "Send",
     "ERROR_NAME_REQUIRED": "Please enter your name.",
@@ -174,17 +174,17 @@
     "ERROR_MESSAGE_MAXLENGTH": "At most 500 characters required.",
     "SUCCESS": "Thank you for your message!",
     "ERROR": "An error occurred. Please try again later.",
-    "ERROR_PRIVACY": "Please accept the privacy policy."
+    "ERROR_PRIVACY": "Please accept the Legal Notes."
   },
   "FOOTER": {
     "COPYRIGHT": "©  Florian Irving {{year}}",
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Imprint",
-    "PRIVACY": "Legal Notice"
+    "PRIVACY": "Legal Notes"
   },
   "PRIVACY": {
-    "TITLE": "Privacy Policy",
+    "TITLE": "Legal Notes",
     "LAST_UPDATED": "Last updated: May 2025",
     "SECTIONS": {
       "RESPONSIBLE": "Responsible Party",
@@ -218,5 +218,15 @@
     "SECURITY_TEXT": "This website uses HTTPS encryption. Your data is securely transmitted when submitting the contact form.",
     "HOSTING_TEXT": "The website is hosted on a private server in Germany and is exclusively managed by Florian Irving.",
     "BACK": "Back to homepage"
+  },
+  "LEGAL": {
+    "TITLE": "Imprint",
+    "OWNER": "Information according to § 5 TMG",
+    "DISCLAIMER_TITLE": "Liability for content",
+    "DISCLAIMER_TEXT": "The content of this page was created with the greatest care...",
+    "LINKS_TITLE": "Liability for links",
+    "LINKS_TEXT": "This page contains links to external third-party websites...",
+    "COPYRIGHT_TITLE": "Copyright",
+    "COPYRIGHT_TEXT": "The content created by the site operators is subject to German copyright law..."
   }
 }

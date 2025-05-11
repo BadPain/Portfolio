@@ -42,4 +42,14 @@ export class SkillsComponent {
       .subscribe((data) => (this.backendSkills = data));
     this.translate.get('SKILLS.TOOLS').subscribe((data) => (this.tools = data));
   }
+
+  scrollToContact() {
+    const isMobile = window.innerWidth <= 850;
+    const targetId = `contact-${isMobile ? 'mobile' : 'desktop'}`;
+    const contactSection = document.getElementById(targetId);
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

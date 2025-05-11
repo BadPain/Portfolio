@@ -162,7 +162,7 @@
     "EMAIL": "Deine E-Mail",
     "MESSAGE": "Deine Nachricht",
     "PRIVACY_PART1": "Ich habe die",
-    "PRIVACY_PART2": "Datenschutzbestimmungen",
+    "PRIVACY_PART2": "Rechtliche Hinweise",
     "PRIVACY_PART3": "gelesen und willige in die Verarbeitung meiner Daten ein.",
     "SEND": "Absenden",
     "ERROR_NAME_REQUIRED": "Bitte gib deinen Namen ein.",
@@ -172,7 +172,7 @@
     "ERROR_MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
     "ERROR_MESSAGE_MINLENGTH": "Mindestens 25 Zeichen nötig.",
     "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen nötig.",
-    "ERROR_PRIVACY": "Datenschutz bitte bestätigen.",
+    "ERROR_PRIVACY": "Rechtliche Hinweise bitte bestätigen.",
     "SUCCESS": "Danke für deine Nachricht!",
     "ERROR": "Fehler beim Senden. Bitte versuche es später erneut."
   },
@@ -181,10 +181,10 @@
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Impressum",
-    "PRIVACY": "Rechtlicher Hinweis"
+    "PRIVACY": "Rechtliche Hinweise"
   },
   "PRIVACY": {
-    "TITLE": "Datenschutzerklärung",
+    "TITLE": "Rechtliche Hinweise",
     "LAST_UPDATED": "Letzte Aktualisierung: Mai 2025",
     "SECTIONS": {
       "RESPONSIBLE": "Verantwortlicher",
@@ -218,5 +218,15 @@
     "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Ihre Daten werden beim Absenden des Kontaktformulars sicher übertragen.",
     "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Florian Irving verwaltet.",
     "BACK": "Zurück zur Startseite"
+  },
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "OWNER": "Angaben gemäß § 5 TMG",
+    "DISCLAIMER_TITLE": "Haftung für Inhalte",
+    "DISCLAIMER_TEXT": "Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt...",
+    "LINKS_TITLE": "Haftung für Links",
+    "LINKS_TEXT": "Diese Seite enthält Links zu externen Webseiten Dritter...",
+    "COPYRIGHT_TITLE": "Urheberrecht",
+    "COPYRIGHT_TEXT": "Die durch die Seitenbetreiber erstellten Inhalte unterliegen dem deutschen Urheberrecht..."
   }
 }
